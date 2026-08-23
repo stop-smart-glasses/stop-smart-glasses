@@ -163,7 +163,7 @@ footer{background:var(--cream);color:var(--ink);border-top:1px solid var(--line)
 <header class="wrap legal-hero">
   <h1>Privacy Notice</h1>
   <p>Stop Smart Glasses campaigns for privacy and consent, so this website is held to the same standard. This notice explains, in plain English, exactly what we do and don't do with your data.</p>
-  <p class="legal-hero__date">Effective / last updated: 22 August 2026 · This notice describes what this website currently does, based on a direct technical audit of its code and configuration — not what it might do in future.</p>
+  <p class="legal-hero__date">Effective / last updated: 23 August 2026 · This notice describes what this website currently does, based on a direct technical audit of its code and configuration — not what it might do in future.</p>
 </header>
 
 <main class="wrap legal-body">
@@ -181,6 +181,7 @@ footer{background:var(--cream);color:var(--ink);border-top:1px solid var(--line)
       <li><a href="#transfers">International processing</a></li>
       <li><a href="#retention">How long anything is kept</a></li>
       <li><a href="#rights">Your rights</a></li>
+      <li><a href="#right-to-object">Your right to object</a></li>
       <li><a href="#complaints">How to complain</a></li>
       <li><a href="#contact">Contact us</a></li>
     </ol>
@@ -195,6 +196,7 @@ footer{background:var(--cream);color:var(--ink);border-top:1px solid var(--line)
   <section class="legal-section" id="finder">
     <h2>The location finder</h2>
     <p>The homepage lets you type in a UK postcode or an Ireland town/city name to find a nearby retailer we've verified sells camera-equipped smart glasses, so you can ask them to stop.</p>
+    <p>Entering a postcode or town is entirely optional. It is not a legal or contractual requirement, nothing else on this site depends on it, no page is withheld if you skip it, and every other part of the campaign works normally whether or not you ever use the finder.</p>
     <p><strong>The postcode or town/city you enter is sent to our Cloudflare-hosted search service in order to return nearby retailer results. That search is not stored by our application anywhere — not in our database (Cloudflare D1), not in a cookie, not in localStorage, and not in any analytics tool.</strong> The paragraphs below explain exactly what does happen to it, including at the infrastructure level, so that claim is precise rather than a slogan.</p>
     <h3>What our own application code does</h3>
     <ul>
@@ -211,12 +213,12 @@ footer{background:var(--cream);color:var(--ink);border-top:1px solid var(--line)
     <h2>Analytics, advertising and third-party tracking</h2>
     <p>As of the date of this notice, we have audited the site's code directly and found <strong>no</strong> Google Analytics, Meta/Facebook Pixel, advertising pixel, or any other first- or third-party analytics or behavioural-tracking tool anywhere on this website.</p>
     <p>We do not currently use website analytics or track whether visitors click campaign action links (for example, a "message this retailer" button or the petition link). We do not build visitor profiles or track individual behaviour across visits or pages.</p>
+    <p>We do not carry out automated decision-making or profiling that produces legal effects concerning you or similarly significantly affects you.</p>
   </section>
 
   <section class="legal-section" id="cookies">
     <h2>Cookies and similar technologies</h2>
     <p><strong>This website does not set any cookies, and does not use localStorage, sessionStorage or any other on-device storage to identify or remember you.</strong> We checked directly and there are none — so we haven't added a cookie banner, because showing one when there's nothing to consent to would be misleading, not reassuring.</p>
-    <p>Four of our pages — Resources, About, Global Action, and Exemption for Disabled People — load a typeface directly from Google Fonts. (The homepage and the remaining pages do not.) Loading this typeface causes your browser to make a direct request to Google's own servers, which — like any web request — necessarily discloses your IP address and browser information to Google as an independent party. This is a design/typography choice, not tracking on our part, and Google does not receive anything else about you from this site. See <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google's privacy policy</a> for how they handle this.</p>
   </section>
 
   <section class="legal-section" id="purposes">
@@ -238,14 +240,13 @@ footer{background:var(--cream);color:var(--ink);border-top:1px solid var(--line)
     <ul>
       <li><strong>Cloudflare</strong> — our hosting, security and search-API provider. Processes IP addresses and full request URLs (including any postcode/town in a finder search) at an infrastructure level, as described above.</li>
       <li><strong>postcodes.io</strong> — receives only the UK postcode text you search for (never your IP address, never anything else about you), purely to convert it to coordinates. Not used for Ireland searches at all.</li>
-      <li><strong>Google Fonts</strong> — receives your IP address and browser information if you visit one of the four pages listed above, as an inherent consequence of loading a typeface file from their servers.</li>
     </ul>
     <p>We do not sell, rent, or otherwise share any data with anyone for advertising or marketing purposes.</p>
   </section>
 
   <section class="legal-section" id="transfers">
     <h2>International processing</h2>
-    <p>Cloudflare and Google both operate global infrastructure, which may process requests outside the UK or EEA as part of their ordinary operation. Both publish their own data-transfer safeguards (for example, Standard Contractual Clauses) — see their respective privacy documentation linked above for specifics. We have not independently audited exactly which country any individual request is routed through.</p>
+    <p>Cloudflare operates global infrastructure, which may process requests outside the UK or EEA as part of its ordinary operation. Cloudflare publishes its own data-transfer safeguards (for example, Standard Contractual Clauses) — see its privacy documentation for specifics. We have not independently audited exactly which country any individual request is routed through.</p>
     <p>We have not confirmed exactly where postcodes.io's own infrastructure is located. If this matters to you, we'd recommend checking with that service directly.</p>
   </section>
 
@@ -265,10 +266,18 @@ footer{background:var(--cream);color:var(--ink);border-top:1px solid var(--line)
       <li>ask what personal data we hold about you;</li>
       <li>ask us to correct inaccurate data;</li>
       <li>ask us to delete data we hold about you;</li>
-      <li>object to how we process data about you;</li>
+      <li>object to how we process data about you (see the separate section below);</li>
       <li>ask us to restrict processing in certain circumstances.</li>
     </ul>
+    <p>Data portability does not apply here, because that right only arises where processing is based on consent or on a contract, and ours is based on legitimate interests.</p>
     <p>In practice: we do not create visitor profiles, and we do not store the postcode or town/city you enter into the finder in our campaign database. We'll still respond properly to any request we receive.</p>
+  </section>
+
+  <section class="legal-section" id="right-to-object">
+    <h2>Your right to object</h2>
+    <p>Because we rely on legitimate interests rather than consent, you have a specific right to object to that processing at any time, on grounds relating to your particular situation.</p>
+    <p>Write to <a href="mailto:privacy@stopsmartglasses.com">privacy@stopsmartglasses.com</a> telling us why, and we will stop unless we can demonstrate compelling legitimate grounds that override your interests, rights and freedoms, or unless we need the data to establish, exercise or defend a legal claim.</p>
+    <p>We do not carry out any direct marketing. If we ever did, you would be able to object to it at any time, for any reason or none, and we would have to stop immediately.</p>
   </section>
 
   <section class="legal-section" id="complaints">
