@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Privacy Notice — Stop Smart Glasses</title>
+<meta name="description" content="What Stop Smart Glasses does and doesn't do with your data — location searches, cookies, analytics and your rights, explained in plain English.">
+<style>
+:root{
+  --violet:#5B22F6;
+  --violet-deep:#3D0FC7;
+  --cream:#F6F2EB;
+  --cream-shade:#EEE8DB;
+  --yellow:#FFDB00;
+  --ink:#111111;
+  --muted:#5c5850;
+  --line:#DAD3C2;
+  --serif: 'Fraunces', Georgia, 'Iowan Old Style', 'Palatino Linotype', ui-serif, serif;
+  --sans: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, ui-sans-serif, sans-serif;
+}
+*{box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+body{margin:0;background:var(--cream);color:var(--ink);font-family:var(--sans);line-height:1.5;-webkit-font-smoothing:antialiased;}
+a{color:inherit;}
+.wrap{max-width:1180px;margin:0 auto;padding:0 32px;}
+
+/* ---------- nav (matches homepage) ---------- */
+.site-nav{padding:20px 0;}
+.site-nav__row{display:flex;align-items:center;justify-content:space-between;width:100%;gap:20px;}
+.site-nav__wordmark{display:block;text-decoration:none;color:var(--ink);flex:0 0 auto;line-height:1;}
+.wm-top{display:flex;align-items:center;gap:4px;}
+.wm-ban{display:inline-block;font-family:var(--serif);font-weight:700;font-size:38px;line-height:0.85;letter-spacing:-.01em;}
+.wm-glasses{width:41px;height:auto;flex:0 0 auto;display:block;}
+.wm-sub{display:block;font-family:var(--serif);font-weight:700;font-size:13px;line-height:1.05;letter-spacing:.04em;margin-top:3px;color:var(--ink);white-space:nowrap;}
+.ink-wash{position:relative;z-index:0;display:inline-block;color:var(--ink);white-space:nowrap;}
+.ink-wash::before{content:"";position:absolute;inset:-0.1em -0.06em -0.16em -0.04em;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 600 140' preserveAspectRatio='none'%3E%3Cpath d='M3,26 C55,6 120,32 190,14 C270,-6 350,24 430,9 C500,-4 560,18 597,15 L598,112 C545,132 480,102 410,120 C335,140 250,108 175,124 C110,138 45,116 3,120 Z' fill='%23FFDB00'/%3E%3C/svg%3E");background-repeat:no-repeat;background-size:100% 100%;transform:rotate(-1deg);z-index:-1;}
+.site-nav__links{display:flex;align-items:center;gap:20px;list-style:none;margin:0;padding:0;flex:1 1 auto;justify-content:center;}
+.site-nav__links a{font-size:13px;white-space:nowrap;text-decoration:none;color:var(--ink);border-bottom:1px solid transparent;padding-bottom:2px;}
+.site-nav__links a:hover{border-bottom-color:var(--violet);}
+.site-nav__links a[aria-disabled="true"]{color:var(--muted);cursor:default;}
+.site-nav__links a[aria-disabled="true"]:hover{border-bottom-color:transparent;}
+.site-nav__links a.is-current{border-bottom-color:var(--violet);font-weight:600;}
+.site-nav__actions{display:flex;align-items:center;gap:14px;flex:0 0 auto;}
+.site-nav__cta{font-size:14px;font-weight:600;white-space:nowrap;background:var(--violet);color:var(--cream);padding:10px 18px;text-decoration:none;}
+.site-nav__cta:hover{background:var(--violet-deep);}
+.site-nav__toggle{display:none;flex-direction:column;justify-content:center;align-items:center;gap:4px;width:36px;height:36px;padding:0;background:none;border:0;cursor:pointer;flex:0 0 auto;}
+.site-nav__toggle span{display:block;width:20px;height:2px;background:var(--ink);}
+.site-nav__toggle[aria-expanded="true"] span:nth-child(1){transform:translateY(6px) rotate(45deg);}
+.site-nav__toggle[aria-expanded="true"] span:nth-child(2){opacity:0;}
+.site-nav__toggle[aria-expanded="true"] span:nth-child(3){transform:translateY(-6px) rotate(-45deg);}
+.site-nav__mobile-menu{display:none;}
+@media (max-width:900px){
+  .wm-ban{font-size:24px;}
+  .wm-glasses{width:26px;}
+  .wm-top{gap:3px;}
+  .wm-sub{font-size:9px;margin-top:2px;}
+  .site-nav__links{display:none;}
+  .site-nav__toggle{display:flex;}
+  .site-nav__mobile-menu{flex-direction:column;background:var(--cream);border-top:1px solid var(--line);margin-top:20px;}
+  .site-nav__mobile-menu:not([hidden]){display:flex;}
+  .site-nav__mobile-menu a{display:block;padding:16px 32px;border-bottom:1px solid var(--line);font-size:16px;text-decoration:none;color:var(--ink);}
+}
+
+/* ---------- legal content ---------- */
+.legal-hero{padding:8px 0 36px;border-bottom:1px solid var(--line);max-width:74ch;}
+.legal-hero h1{font-family:var(--serif);font-weight:700;font-size:clamp(30px,4vw,44px);line-height:1.1;margin:0 0 14px;}
+.legal-hero p{font-size:16px;line-height:1.6;color:var(--muted);margin:0;}
+.legal-hero__date{font-size:13px;color:var(--muted);margin-top:14px;}
+.legal-body{padding:44px 0 72px;max-width:74ch;}
+.legal-section{margin:0 0 40px;}
+.legal-section:last-of-type{margin-bottom:0;}
+.legal-section h2{font-family:var(--serif);font-weight:700;font-size:clamp(19px,2.1vw,23px);line-height:1.25;margin:0 0 14px;padding-bottom:8px;border-bottom:2px solid var(--ink);}
+.legal-section h3{font-family:var(--serif);font-weight:700;font-size:15.5px;margin:20px 0 8px;}
+.legal-section p{font-size:15px;line-height:1.65;color:var(--ink);margin:0 0 14px;}
+.legal-section p.muted{color:var(--muted);font-size:13.5px;}
+.legal-section ul, .legal-section ol{margin:0 0 14px;padding-left:22px;}
+.legal-section li{font-size:15px;line-height:1.6;margin-bottom:6px;}
+.legal-section a{color:var(--violet);text-decoration:none;border-bottom:1px solid var(--violet);font-weight:600;}
+.legal-section a:hover{color:var(--violet-deep);border-color:var(--violet-deep);}
+.legal-callout{background:var(--cream-shade);border-left:3px solid var(--violet);padding:16px 18px;margin:0 0 14px;}
+.legal-callout p{margin:0;font-size:14px;color:var(--ink);}
+.legal-quote{background:#fff;border:1px solid var(--line);padding:16px 18px;margin:0 0 14px;font-family:var(--serif);font-weight:600;font-size:15px;line-height:1.5;}
+.toc{background:var(--cream-shade);padding:20px 22px;margin:0 0 44px;}
+.toc h2{font-family:var(--serif);font-weight:700;font-size:14px;text-transform:uppercase;letter-spacing:.04em;margin:0 0 10px;border:none;padding:0;}
+.toc ol{margin:0;padding-left:20px;columns:2;column-gap:24px;}
+.toc li{font-size:13.5px;margin-bottom:6px;}
+.toc a{color:var(--ink);text-decoration:none;border-bottom:1px solid var(--line);}
+.toc a:hover{border-bottom-color:var(--violet);}
+@media (max-width:600px){ .toc ol{columns:1;} }
+
+/* ---------- footer (matches homepage) ---------- */
+footer{background:var(--cream);color:var(--ink);border-top:1px solid var(--line);padding:56px 0 0;margin-top:24px;}
+.footer__top{display:grid;grid-template-columns:1.6fr 1fr;gap:40px;align-items:start;padding-bottom:40px;}
+.footer__mark{font-family:var(--serif);font-weight:700;font-size:clamp(21px,2vw,25px);letter-spacing:-.01em;margin:0 0 10px;}
+.footer__tagline{font-family:var(--serif);font-weight:700;font-size:clamp(18px,1.6vw,21px);line-height:1.3;margin:0 0 12px;color:var(--ink);}
+.footer__desc{font-size:14px;color:var(--muted);margin:0 0 20px;max-width:44ch;}
+.footer__links{display:flex;flex-wrap:wrap;row-gap:8px;margin:0 0 20px;}
+.footer__links a{font-size:13.5px;color:var(--ink);text-decoration:none;border-bottom:1px solid transparent;padding-bottom:1px;}
+.footer__links a:hover{border-bottom-color:var(--violet);}
+.footer__links a[aria-disabled="true"]{color:var(--muted);cursor:default;}
+.footer__links a[aria-disabled="true"]:hover{border-bottom-color:transparent;}
+.footer__links a+a::before{content:"·";margin:0 12px;color:var(--line);}
+.footer__statement{font-family:var(--serif);font-weight:700;font-size:clamp(15px,1.3vw,18px);line-height:1.4;max-width:40ch;margin:0;color:var(--ink);}
+.footer__replicate{background:var(--violet);color:var(--cream);padding:26px 24px;}
+.footer__replicate-label{font-family:var(--serif);font-weight:700;font-size:12px;letter-spacing:.06em;text-transform:uppercase;color:var(--yellow);margin:0 0 12px;}
+.footer__replicate-copy{font-size:13.5px;line-height:1.5;color:#ede7fb;margin:0 0 18px;}
+.footer__replicate-cta{display:inline-block;background:var(--yellow);color:var(--ink);font-size:13.5px;font-weight:700;padding:10px 18px;text-decoration:none;}
+.footer__replicate-cta:hover{background:#ffe544;}
+.footer__legal{border-top:1px solid var(--line);padding:20px 0 28px;font-size:12px;color:var(--muted);}
+.footer__legal p{margin:0 0 6px;}
+.footer__legal a{color:var(--muted);text-decoration:underline;}
+@media (max-width:900px){ .footer__top{grid-template-columns:1fr;gap:28px;} }
+
+.proto-banner{background:var(--ink);color:var(--yellow);font-size:12px;text-align:center;padding:8px 12px;letter-spacing:.03em;}
+</style>
+</head>
+<body>
+
+<div class="proto-banner">Public beta — Stop Smart Glasses launches in public beta, with further campaign tools being added during the beta period.</div>
+
+<nav class="site-nav">
+  <div class="wrap site-nav__row">
+    <a class="site-nav__wordmark" href="/" aria-label="Stop Smart Glasses — homepage">
+      <span class="wm-top">
+        <span class="wm-ban ink-wash">STOP</span>
+        <svg class="wm-glasses" viewBox="0 0 128 52" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <rect x="14" y="14" width="38" height="28" rx="7" fill="none" stroke="#1a1a1a" stroke-width="4"/>
+          <rect x="76" y="14" width="38" height="28" rx="7" fill="none" stroke="#1a1a1a" stroke-width="4"/>
+          <path d="M52 24 H76" fill="none" stroke="#1a1a1a" stroke-width="4" stroke-linecap="round"/>
+          <path d="M14 22 L2 16" fill="none" stroke="#1a1a1a" stroke-width="4" stroke-linecap="round"/>
+          <path d="M114 22 L126 16" fill="none" stroke="#1a1a1a" stroke-width="4" stroke-linecap="round"/>
+          <path d="M99,9 C106,6 113,8 115,13 C117,18 114,22 108,23 C102,24 97,21 96,16 C95,12 96,11 99,9 Z" fill="#FFDB00"/>
+          <circle cx="106" cy="16" r="3.4" fill="#1a1a1a"/>
+        </svg>
+      </span>
+      <span class="wm-sub">SMART&nbsp;GLASSES</span>
+    </a>
+    <ul class="site-nav__links">
+      <li><a href="/#take-action">Take action</a></li>
+      <li><a href="/#why-this-matters">Why this matters</a></li>
+      <li><a href="/exemption-for-disabled-people/">Accessibility</a></li>
+      <li><a href="/resources/">Resources</a></li>
+      <li><a href="/global-action/">Global action</a></li>
+      <li><a href="/about/">About</a></li>
+    </ul>
+    <div class="site-nav__actions">
+      <a class="site-nav__cta" href="https://petition.parliament.uk/petitions/769206" target="_blank" rel="noopener">Sign the petition</a>
+      <button type="button" class="site-nav__toggle" id="navToggle" aria-expanded="false" aria-controls="navMobileMenu" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+  <div class="site-nav__mobile-menu" id="navMobileMenu" hidden>
+    <a href="/#take-action">Take action</a>
+    <a href="/#why-this-matters">Why this matters</a>
+    <a href="/exemption-for-disabled-people/">Accessibility</a>
+    <a href="/resources/">Resources</a>
+    <a href="/global-action/">Global action</a>
+    <a href="/about/">About</a>
+  </div>
+</nav>
+
+<header class="wrap legal-hero">
+  <h1>Privacy Notice</h1>
+  <p>Stop Smart Glasses campaigns for privacy and consent, so this website is held to the same standard. This notice explains, in plain English, exactly what we do and don't do with your data.</p>
+  <p class="legal-hero__date">Effective / last updated: 22 August 2026 · This notice describes what this website currently does, based on a direct technical audit of its code and configuration — not what it might do in future.</p>
+</header>
+
+<main class="wrap legal-body">
+
+  <nav class="toc" aria-label="Contents">
+    <h2>On this page</h2>
+    <ol>
+      <li><a href="#who">Who is responsible for this website</a></li>
+      <li><a href="#finder">The location finder</a></li>
+      <li><a href="#analytics">Analytics, advertising and third-party tracking</a></li>
+      <li><a href="#cookies">Cookies and similar technologies</a></li>
+      <li><a href="#purposes">Why we process any data at all</a></li>
+      <li><a href="#lawful-basis">Our lawful basis</a></li>
+      <li><a href="#recipients">Who else sees any data, and why</a></li>
+      <li><a href="#transfers">International processing</a></li>
+      <li><a href="#retention">How long anything is kept</a></li>
+      <li><a href="#rights">Your rights</a></li>
+      <li><a href="#complaints">How to complain</a></li>
+      <li><a href="#contact">Contact us</a></li>
+    </ol>
+  </nav>
+
+  <section class="legal-section" id="who">
+    <h2>Who is responsible for this website</h2>
+    <p>Stop Smart Glasses is an independent campaign, not a company, charity or CIC. It was created and is run by Liz Hunter, the campaign's founder. It is not affiliated with, endorsed by or associated with Meta or Ray-Ban.</p>
+    <p>For UK data protection purposes, the "controller" — the person who decides why and how any data is processed — is <strong>Liz Hunter</strong>, as an individual operating this campaign. See "Contact us" below for how to reach us about privacy.</p>
+  </section>
+
+  <section class="legal-section" id="finder">
+    <h2>The location finder</h2>
+    <p>The homepage lets you type in a UK postcode or an Ireland town/city name to find a nearby retailer we've verified sells camera-equipped smart glasses, so you can ask them to stop.</p>
+    <p><strong>The postcode or town/city you enter is sent to our Cloudflare-hosted search service in order to return nearby retailer results. That search is not stored by our application anywhere — not in our database (Cloudflare D1), not in a cookie, not in localStorage, and not in any analytics tool.</strong> The paragraphs below explain exactly what does happen to it, including at the infrastructure level, so that claim is precise rather than a slogan.</p>
+    <h3>What our own application code does</h3>
+    <ul>
+      <li><strong>UK postcode:</strong> sent to our Cloudflare Worker, which asks <a href="https://postcodes.io" target="_blank" rel="noopener">postcodes.io</a> — a free, publicly available UK postcode-lookup service — for that postcode's approximate coordinates. Only the postcode text is sent to postcodes.io; your IP address and nothing else about you is passed to it. This request happens server-to-server, not from your browser.</li>
+      <li><strong>Ireland town/city:</strong> matched against a small fixed list of Irish town names held directly in our own server code. postcodes.io is not used for Ireland at all — there is no external lookup call for an Ireland search.</li>
+      <li>Either way, the resulting coordinates are used once, to check our own retailer database for anything within 10, 25 or 50 miles, and the matching results are sent back to your browser. <strong>Our application code never writes the postcode/town you searched, or the results, to D1, to a log file, or anywhere else persistent.</strong> We checked this directly in the code that handles searches: it only ever reads data to answer your search, and never performs a write or save of the search text at any point.</li>
+    </ul>
+    <h3>What Cloudflare necessarily processes, as our infrastructure provider</h3>
+    <p><strong>The finder currently places your postcode or town/city in the request's URL as a query parameter</strong> (for example, `.../api/stockists?postcode=...`) — it is not hidden in a request body. Cloudflare, as the network that receives, routes and secures this request, necessarily processes the full request URL (postcode included) and your IP address as a normal part of handling any HTTP request — this happens regardless of any additional analytics or logging product being switched on, and is inherent to how any hosting/CDN provider operates. This is Cloudflare's infrastructure-level processing, separate from and not visible to our own application.</p>
+    <p><strong>Workers Observability (Cloudflare's optional logging product for this specific Worker) is confirmed switched off</strong> for the Worker that powers this search, as verified directly in our Cloudflare account on 22 August 2026. In plain terms: we have checked, and this particular logging feature is not capturing extra application-level records of these requests. This is a setting we control and could change in future, in which case we'll update this notice.</p>
+  </section>
+
+  <section class="legal-section" id="analytics">
+    <h2>Analytics, advertising and third-party tracking</h2>
+    <p>As of the date of this notice, we have audited the site's code directly and found <strong>no</strong> Google Analytics, Meta/Facebook Pixel, advertising pixel, or any other first- or third-party analytics or behavioural-tracking tool anywhere on this website.</p>
+    <p>We do not currently use website analytics or track whether visitors click campaign action links (for example, a "message this retailer" button or the petition link). We do not build visitor profiles or track individual behaviour across visits or pages.</p>
+  </section>
+
+  <section class="legal-section" id="cookies">
+    <h2>Cookies and similar technologies</h2>
+    <p><strong>This website does not set any cookies, and does not use localStorage, sessionStorage or any other on-device storage to identify or remember you.</strong> We checked directly and there are none — so we haven't added a cookie banner, because showing one when there's nothing to consent to would be misleading, not reassuring.</p>
+    <p>Four of our pages — Resources, About, Global Action, and Exemption for Disabled People — load a typeface directly from Google Fonts. (The homepage and the remaining pages do not.) Loading this typeface causes your browser to make a direct request to Google's own servers, which — like any web request — necessarily discloses your IP address and browser information to Google as an independent party. This is a design/typography choice, not tracking on our part, and Google does not receive anything else about you from this site. See <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google's privacy policy</a> for how they handle this.</p>
+  </section>
+
+  <section class="legal-section" id="purposes">
+    <h2>Why we process any data at all</h2>
+    <p>The only processing of information you actively provide to this website is returning nearby retailer results when you use the location finder. We don't use that information for marketing, profiling or analytics.</p>
+  </section>
+
+  <section class="legal-section" id="lawful-basis">
+    <h2>Our lawful basis</h2>
+    <p>Where UK data protection law requires us to identify a lawful basis, we rely on <strong>legitimate interests</strong>, specifically:</p>
+    <ul>
+      <li><strong>Location finder:</strong> letting a visitor who has directly and voluntarily asked to find a nearby verified retailer actually get an answer to that request — a core, directly-requested feature of this site.</li>
+      <li><strong>Cloudflare's infrastructure-level processing:</strong> keeping the website online, fast and secure against attacks.</li>
+    </ul>
+  </section>
+
+  <section class="legal-section" id="recipients">
+    <h2>Who else sees any data, and why</h2>
+    <ul>
+      <li><strong>Cloudflare</strong> — our hosting, security and search-API provider. Processes IP addresses and full request URLs (including any postcode/town in a finder search) at an infrastructure level, as described above.</li>
+      <li><strong>postcodes.io</strong> — receives only the UK postcode text you search for (never your IP address, never anything else about you), purely to convert it to coordinates. Not used for Ireland searches at all.</li>
+      <li><strong>Google Fonts</strong> — receives your IP address and browser information if you visit one of the four pages listed above, as an inherent consequence of loading a typeface file from their servers.</li>
+    </ul>
+    <p>We do not sell, rent, or otherwise share any data with anyone for advertising or marketing purposes.</p>
+  </section>
+
+  <section class="legal-section" id="transfers">
+    <h2>International processing</h2>
+    <p>Cloudflare and Google both operate global infrastructure, which may process requests outside the UK or EEA as part of their ordinary operation. Both publish their own data-transfer safeguards (for example, Standard Contractual Clauses) — see their respective privacy documentation linked above for specifics. We have not independently audited exactly which country any individual request is routed through.</p>
+    <p>We have not confirmed exactly where postcodes.io's own infrastructure is located. If this matters to you, we'd recommend checking with that service directly.</p>
+  </section>
+
+  <section class="legal-section" id="retention">
+    <h2>How long anything is kept</h2>
+    <p><strong>Location searches:</strong> your postcode or town/city search is not retained by our application at all — it is used for the moment it takes to answer your search and then discarded. Nothing is written to D1, a cookie, localStorage, or any log our application controls.</p>
+    <p><strong>Our retailer database</strong> (addresses and verification evidence for sellers we've identified) is kept and updated on an ongoing basis as a public-interest resource — that's information about businesses, not visitors, and is covered by our <a href="/terms/">Terms</a> rather than this notice.</p>
+    <div class="legal-callout">
+      <p><strong>Confirmed directly in our Cloudflare account, 22 August 2026:</strong> Workers Observability is switched off for the Worker that powers this site's search feature.</p>
+    </div>
+  </section>
+
+  <section class="legal-section" id="rights">
+    <h2>Your rights</h2>
+    <p>Under UK data protection law (and, for Irish visitors, equivalent Irish/EU law), you have the right to:</p>
+    <ul>
+      <li>ask what personal data we hold about you;</li>
+      <li>ask us to correct inaccurate data;</li>
+      <li>ask us to delete data we hold about you;</li>
+      <li>object to how we process data about you;</li>
+      <li>ask us to restrict processing in certain circumstances.</li>
+    </ul>
+    <p>In practice: we do not create visitor profiles, and we do not store the postcode or town/city you enter into the finder in our campaign database. We'll still respond properly to any request we receive.</p>
+  </section>
+
+  <section class="legal-section" id="complaints">
+    <h2>How to complain</h2>
+    <p>We'd like the chance to put things right first — please <a href="#contact">contact us</a> with any concern.</p>
+    <p>If you're in the <strong>UK</strong>, you also have the right to complain to the Information Commissioner's Office (ICO): <a href="https://ico.org.uk/make-a-complaint/" target="_blank" rel="noopener">ico.org.uk/make-a-complaint</a>.</p>
+    <p>If you're in <strong>Ireland</strong>, you have the right to complain to the Data Protection Commission (DPC): <a href="https://www.dataprotection.ie/en/individuals/lodge-complaint" target="_blank" rel="noopener">dataprotection.ie</a>.</p>
+  </section>
+
+  <section class="legal-section" id="contact">
+    <h2>Contact us</h2>
+    <p>For any privacy question, or to exercise any of the rights above, contact: <a href="mailto:privacy@stopsmartglasses.com">privacy@stopsmartglasses.com</a>.</p>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap footer__top">
+    <div class="footer__identity">
+      <p class="footer__mark">Stop Smart Glasses</p>
+      <p class="footer__tagline">WE DON'T CONSENT TO&nbsp;THIS</p>
+      <p class="footer__desc">Created by Liz Hunter — independent UK &amp; Ireland privacy campaign.</p>
+      <nav class="footer__links" aria-label="Footer">
+        <a href="/#take-action">Take action</a>
+        <a href="/#why-this-matters">Why this matters</a>
+        <a href="/resources/">Resources</a>
+        <a href="/global-action/">Global action</a>
+        <a href="/about/">About</a>
+        <a href="https://petition.parliament.uk/petitions/769206" target="_blank" rel="noopener">Sign the petition</a>
+      </nav>
+      <p class="footer__statement">The database shows where they're sold.<br>The campaign gives people the tools to&nbsp;act.</p>
+    </div>
+    <div class="footer__replicate">
+      <p class="footer__replicate-label">Global action</p>
+      <p class="footer__replicate-copy">This starts in the UK and Ireland. But smart glasses are a global issue. The Stop Smart Glasses website is open source – designed to be copied and adapted by anyone who wants to launch the campaign in their country.</p>
+      <a class="footer__replicate-cta" href="/global-action/">Create your local site →</a>
+    </div>
+  </div>
+  <div class="wrap footer__legal">
+    <nav class="footer__links" aria-label="Legal" style="margin-bottom:10px;">
+      <a href="/privacy/" class="is-current">Privacy</a>
+    </nav>
+    <p>Stop Smart Glasses is an independent campaign and is not affiliated with, endorsed by or associated with Meta or Ray-Ban.</p>
+    <p>&copy; 2026 Stop Smart Glasses</p>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var btn = document.getElementById('navToggle');
+  var menu = document.getElementById('navMobileMenu');
+  if(!btn || !menu) return;
+  btn.addEventListener('click', function(){
+    var willOpen = menu.hidden;
+    menu.hidden = !willOpen;
+    btn.setAttribute('aria-expanded', String(willOpen));
+  });
+  menu.addEventListener('click', function(e){
+    var link = e.target.closest('a');
+    if(link){
+      menu.hidden = true;
+      btn.setAttribute('aria-expanded', 'false');
+    }
+  });
+})();
+</script>
+</body>
+</html>
