@@ -3,16 +3,9 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Accessibility — Stop Smart Glasses</title>
-<meta name="description" content="How Stop Smart Glasses approaches accessibility and assistive use of smart glasses by disabled people.">
+<title>Image Credits — Stop Smart Glasses</title>
+<meta name="description" content="Photo credits for the images used across the Stop Smart Glasses website.">
 <style>
-@font-face{
-  font-family:'Fraunces';
-  font-style:normal;
-  font-weight:700;
-  font-display:swap;
-  src:url(../assets/fonts/fraunces-700.woff2) format('woff2');
-}
 :root{
   --violet:#5B22F6;
   --violet-deep:#3D0FC7;
@@ -44,10 +37,7 @@ a{color:inherit;}
 .site-nav__links{display:flex;align-items:center;gap:20px;list-style:none;margin:0;padding:0;flex:1 1 auto;justify-content:center;}
 .site-nav__links a{font-size:13px;white-space:nowrap;text-decoration:none;color:var(--ink);border-bottom:1px solid transparent;padding-bottom:2px;}
 .site-nav__links a:hover{border-bottom-color:var(--violet);}
-.site-nav__links a[aria-disabled="true"]{color:var(--muted);cursor:default;}
-.site-nav__links a[aria-disabled="true"]:hover{border-bottom-color:transparent;}
 .site-nav__links a.is-current{border-bottom-color:var(--violet);font-weight:600;}
-.soon-badge{display:inline-block;font-size:9px;font-weight:700;letter-spacing:.04em;text-transform:uppercase;color:var(--violet);background:#ece6fd;border-radius:3px;padding:1px 5px;margin-left:4px;vertical-align:2px;}
 .site-nav__actions{display:flex;align-items:center;gap:14px;flex:0 0 auto;}
 .site-nav__cta{font-size:14px;font-weight:600;white-space:nowrap;background:var(--violet);color:var(--cream);padding:10px 18px;text-decoration:none;}
 .site-nav__cta:hover{background:var(--violet-deep);}
@@ -67,28 +57,23 @@ a{color:inherit;}
   .site-nav__mobile-menu{flex-direction:column;background:var(--cream);border-top:1px solid var(--line);margin-top:20px;}
   .site-nav__mobile-menu:not([hidden]){display:flex;}
   .site-nav__mobile-menu a{display:block;padding:16px 32px;border-bottom:1px solid var(--line);font-size:16px;text-decoration:none;color:var(--ink);}
-  .site-nav__mobile-menu a[aria-disabled="true"]{color:var(--muted);}
 }
 
-/* ---------- accessibility content ---------- */
-.stub-hero{padding:8px 0 44px;border-bottom:1px solid var(--line);}
-.stub-hero h1{font-family:var(--serif);font-weight:700;font-size:clamp(30px,4vw,44px);line-height:1.15;margin:0 0 18px;max-width:20ch;}
-.stub-body{padding:44px 0 20px;max-width:66ch;}
-.stub-body h2{font-family:var(--serif);font-weight:700;font-size:clamp(21px,2.4vw,26px);line-height:1.25;margin:40px 0 18px;}
-.stub-body h2:first-child{margin-top:0;}
-.stub-body p{font-size:16px;line-height:1.6;color:var(--muted);margin:0 0 18px;}
-.stub-body p:last-child{margin-bottom:0;}
-.a11y-source{font-size:13.5px;color:var(--muted);margin:0 0 18px;}
-.a11y-source a{color:var(--violet);text-decoration:none;border-bottom:1px solid var(--violet);word-break:break-word;}
-.a11y-source a:hover{color:var(--violet-deep);border-color:var(--violet-deep);}
-.a11y-source-list{list-style:none;margin:0 0 18px;padding:0;}
-.a11y-source-list li{margin:0 0 6px;font-size:13.5px;}
-.a11y-source-list a{color:var(--violet);text-decoration:none;border-bottom:1px solid var(--violet);word-break:break-word;}
-.a11y-source-list a:hover{color:var(--violet-deep);border-color:var(--violet-deep);}
-.a11y-position{background:var(--violet);color:var(--cream);padding:32px 28px;margin:40px 0 0;}
-.a11y-position__label{font-family:var(--serif);font-weight:700;font-size:12.5px;letter-spacing:.06em;text-transform:uppercase;color:var(--yellow);margin:0 0 16px;}
-.a11y-position p{font-family:var(--serif);font-weight:700;font-size:clamp(19px,2vw,23px);line-height:1.35;color:var(--cream);margin:0 0 12px;}
-.a11y-position p:last-child{margin-bottom:0;}
+/* ---------- legal content ---------- */
+.legal-hero{padding:8px 0 36px;border-bottom:1px solid var(--line);max-width:74ch;}
+.legal-hero h1{font-family:var(--serif);font-weight:700;font-size:clamp(30px,4vw,44px);line-height:1.1;margin:0 0 14px;}
+.legal-hero p{font-size:16px;line-height:1.6;color:var(--muted);margin:0;}
+.legal-body{padding:44px 0 72px;max-width:74ch;}
+.legal-section{margin:0 0 40px;}
+.legal-section:last-of-type{margin-bottom:0;}
+.legal-section h2{font-family:var(--serif);font-weight:700;font-size:clamp(19px,2.1vw,23px);line-height:1.25;margin:0 0 18px;padding-bottom:8px;border-bottom:2px solid var(--ink);}
+
+/* ---------- photo credit cards ---------- */
+.credit-grid{display:grid;grid-template-columns:1fr;gap:18px;margin:0;padding:0;list-style:none;}
+.credit-card{display:flex;gap:16px;align-items:flex-start;background:var(--cream-shade);padding:14px;}
+.credit-card__thumb{width:72px;height:72px;flex:0 0 auto;object-fit:cover;background:var(--line);}
+.credit-card__caption{font-size:14px;line-height:1.4;color:var(--ink);margin:0 0 4px;font-weight:600;}
+.credit-card__credit{font-size:13.5px;line-height:1.4;color:var(--muted);margin:0;}
 
 /* ---------- footer (matches homepage) ---------- */
 footer{background:var(--cream);color:var(--ink);border-top:1px solid var(--line);padding:56px 0 0;margin-top:24px;}
@@ -102,6 +87,7 @@ footer{background:var(--cream);color:var(--ink);border-top:1px solid var(--line)
 .footer__links a[aria-disabled="true"]{color:var(--muted);cursor:default;}
 .footer__links a[aria-disabled="true"]:hover{border-bottom-color:transparent;}
 .footer__links a+a::before{content:"·";margin:0 12px;color:var(--line);}
+.footer__links a.is-current{font-weight:600;border-bottom-color:var(--violet);}
 .footer__statement{font-family:var(--serif);font-weight:700;font-size:clamp(15px,1.3vw,18px);line-height:1.4;max-width:40ch;margin:0;color:var(--ink);}
 .footer__replicate{background:var(--violet);color:var(--cream);padding:26px 24px;}
 .footer__replicate-label{font-family:var(--serif);font-weight:700;font-size:12px;letter-spacing:.06em;text-transform:uppercase;color:var(--yellow);margin:0 0 12px;}
@@ -140,7 +126,7 @@ footer{background:var(--cream);color:var(--ink);border-top:1px solid var(--line)
     <ul class="site-nav__links">
       <li><a href="/#take-action">Take action</a></li>
       <li><a href="/#why-this-matters">Why this matters</a></li>
-      <li><a href="/exemption-for-disabled-people/" class="is-current">Accessibility</a></li>
+      <li><a href="/exemption-for-disabled-people/">Accessibility</a></li>
       <li><a href="/resources/">Resources</a></li>
       <li><a href="/global-action/">Global action</a></li>
       <li><a href="/about/">About</a></li>
@@ -162,40 +148,89 @@ footer{background:var(--cream);color:var(--ink);border-top:1px solid var(--line)
   </div>
 </nav>
 
-<header class="wrap stub-hero">
-  <h1>Accessibility</h1>
+<header class="wrap legal-hero">
+  <h1>Image Credits</h1>
+  <p>Photographs on this website are used under licence from their photographers and image platforms. We're glad to credit them here.</p>
 </header>
 
-<main class="wrap stub-body">
-  <h2>Accessibility should be protected</h2>
-  <p>Smart glasses can offer genuine and important benefits for disabled people.</p>
-  <p>For blind and partially sighted people, wearable technology can help with tasks such as understanding their surroundings, accessing information and navigating everyday life more independently. The Royal National Institute of Blind People (RNIB) already recommends assistive technology, including 'smart glasses', that are dedicated for those with little or no vision.</p>
-  <p class="a11y-source">Source: <a href="https://www.rnib.org.uk/living-with-sight-loss/assistive-aids-and-technology/wearable-technology-smart-glasses-and-head-mounted-cameras/" target="_blank" rel="noopener">https://www.rnib.org.uk/living-with-sight-loss/assistive-aids-and-technology/wearable-technology-smart-glasses-and-head-mounted-cameras/</a></p>
-  <p>The UK Government also recognises the importance of assistive technology in removing barriers for disabled people and helping people participate more fully and independently in everyday life. Government-backed research has supported the development of smart glasses specifically designed to improve independence and quality of life for people with sight loss.</p>
-  <p class="a11y-source">Sources:</p>
-  <ul class="a11y-source-list">
-    <li><a href="https://www.gov.uk/government/publications/using-assistive-and-accessible-technology-atech" target="_blank" rel="noopener">https://www.gov.uk/government/publications/using-assistive-and-accessible-technology-atech</a></li>
-    <li><a href="https://www.gov.uk/government/publications/assistive-technology-research-and-development-work-2021-to-2022/assistive-technology-research-and-development-work-2021-to-2022" target="_blank" rel="noopener">https://www.gov.uk/government/publications/assistive-technology-research-and-development-work-2021-to-2022/assistive-technology-research-and-development-work-2021-to-2022</a></li>
-  </ul>
-  <p>Stop Smart Glasses supports the use of assistive technology by disabled people.</p>
-  <p>We are campaigning against the mass-market sale, promotion and normalisation of camera-equipped glasses as an everyday consumer product.</p>
+<main class="wrap legal-body">
 
-  <h2>Assistive use is different from mass-market use</h2>
-  <p>There is an important distinction between technology being used to overcome a disability-related barrier and millions of consumers being encouraged to wear cameras on their faces as part of everyday life.</p>
-  <p>UK government guidance already recognises a similar distinction in its approach to assistive technology and medical devices: the intended purpose of a product and the people it is designed to support can matter when determining how it should be treated.</p>
-  <p class="a11y-source">Source: <a href="https://www.gov.uk/government/publications/assistive-technology-definition-and-safe-use/assistive-technology-definition-and-safe-use" target="_blank" rel="noopener">https://www.gov.uk/government/publications/assistive-technology-definition-and-safe-use/assistive-technology-definition-and-safe-use</a></p>
-  <p>Regulation and restrictions on camera-equipped smart glasses should therefore protect legitimate disability-related and assistive uses.</p>
-  <p>The precise legal and policy mechanism for achieving that needs to be developed with disabled people, accessibility organisations and relevant experts — not decided without them.</p>
-  <p>Accessibility and privacy should not be pitted against each other. We are more than capable of protecting both.</p>
+  <section class="legal-section" id="hero-photos">
+    <h2>Hero Photos</h2>
+    <ul class="credit-grid">
+      <li class="credit-card">
+        <img class="credit-card__thumb" src="../assets/hero-left-child-transit.jpg" alt="A young child looks toward the camera while riding public transport, an adult seated behind them." loading="lazy">
+        <div>
+          <p class="credit-card__caption">Homepage — child on public transport</p>
+          <p class="credit-card__credit">Photo by lucas Favre on Unsplash</p>
+        </div>
+      </li>
+      <li class="credit-card">
+        <img class="credit-card__thumb" src="../assets/hero-centre-woman.jpg" alt="A woman with curly hair looks back over her shoulder while walking down a street." loading="lazy">
+        <div>
+          <p class="credit-card__caption">Homepage — woman looking back over her shoulder</p>
+          <p class="credit-card__credit">Photo: PeopleImages, via iStock</p>
+        </div>
+      </li>
+      <li class="credit-card">
+        <img class="credit-card__thumb" src="../assets/hero-right-crossing-clean.jpg" alt="Three people, two children and an adult with school backpacks, cross a road on a marked zebra crossing, seen from a distance." loading="lazy">
+        <div>
+          <p class="credit-card__caption">Homepage — children crossing the road</p>
+          <p class="credit-card__credit">Photo by Jon Torres on Unsplash</p>
+        </div>
+      </li>
+    </ul>
+  </section>
+
+  <section class="legal-section" id="other-photographs">
+    <h2>Other Photographs</h2>
+    <ul class="credit-grid">
+      <li class="credit-card">
+        <img class="credit-card__thumb" src="../assets/getty-_NL0ZN4UROY-bw-v1.jpg" alt="A woman rests her head on her hand, looking out of the window on public transport." loading="lazy">
+        <div>
+          <p class="credit-card__caption">Homepage — woman resting her head on her hand on public transport</p>
+          <p class="credit-card__credit">Photo via Getty Images, licensed via Unsplash+</p>
+        </div>
+      </li>
+      <li class="credit-card">
+        <img class="credit-card__thumb" src="../assets/tommao-wang-bw-v1.jpg" alt="An adult holds a young child close on public transport." loading="lazy">
+        <div>
+          <p class="credit-card__caption">Homepage — adult holding a child close on public transport</p>
+          <p class="credit-card__credit">Photo by tommao wang on Unsplash</p>
+        </div>
+      </li>
+      <li class="credit-card">
+        <img class="credit-card__thumb" src="../assets/wassim-chouak-bw-v1.jpg" alt="A young man holds his palm up directly at the camera, face obscured, in a clear gesture of refusal." loading="lazy">
+        <div>
+          <p class="credit-card__caption">Homepage — a gesture of refusal</p>
+          <p class="credit-card__credit">Photo by Wassim Chouak on Unsplash</p>
+        </div>
+      </li>
+      <li class="credit-card">
+        <img class="credit-card__thumb" src="../assets/resources-hero-bus-bw.jpg" alt="A young woman sits on a bus, headphones round her neck, looking directly at the camera." loading="lazy">
+        <div>
+          <p class="credit-card__caption">Resources page — woman on a bus</p>
+          <p class="credit-card__credit">Photo via Getty Images, licensed via Unsplash+</p>
+        </div>
+      </li>
+      <li class="credit-card">
+        <img class="credit-card__thumb" src="../assets/global-action-hero-child-bw.jpg" alt="An adult protectively holds their hand over a child's head while the child looks toward the camera." loading="lazy">
+        <div>
+          <p class="credit-card__caption">Global Action page — adult protecting a child</p>
+          <p class="credit-card__credit">Photo via Getty Images, licensed via Unsplash+</p>
+        </div>
+      </li>
+      <li class="credit-card">
+        <img class="credit-card__thumb" src="../assets/about-hero-optionB-bw.jpg" alt="A father walks away holding hands with his young child in an open park." loading="lazy">
+        <div>
+          <p class="credit-card__caption">About page — parent and child in a park</p>
+          <p class="credit-card__credit">Photo by Natalia Blauth, licensed via Unsplash+</p>
+        </div>
+      </li>
+    </ul>
+  </section>
+
 </main>
-
-<div class="wrap">
-  <div class="a11y-position">
-    <p class="a11y-position__label">Our position</p>
-    <p>Protect assistive use for disabled people.</p>
-    <p>Stop the mass-market normalisation of cameras worn on our faces.</p>
-  </div>
-</div>
 
 <footer>
   <div class="wrap footer__top">
@@ -223,7 +258,7 @@ footer{background:var(--cream);color:var(--ink);border-top:1px solid var(--line)
     <nav class="footer__links" aria-label="Legal" style="margin-bottom:10px;">
       <a href="/privacy/">Privacy</a>
       <a href="/terms/">Terms</a>
-      <a href="/image-credits/">Image Credits</a>
+      <a href="/image-credits/" class="is-current">Image Credits</a>
     </nav>
     <p>Stop Smart Glasses is an independent campaign and is not affiliated with, endorsed by or associated with Meta or Ray-Ban.</p>
     <p>&copy; 2026 Stop Smart Glasses</p>
@@ -242,7 +277,7 @@ footer{background:var(--cream);color:var(--ink);border-top:1px solid var(--line)
   });
   menu.addEventListener('click', function(e){
     var link = e.target.closest('a');
-    if(link && link.getAttribute('aria-disabled') !== 'true'){
+    if(link){
       menu.hidden = true;
       btn.setAttribute('aria-expanded', 'false');
     }
