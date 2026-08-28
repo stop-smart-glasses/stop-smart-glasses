@@ -121,9 +121,11 @@ a{color:inherit;}
 .copilot-disclaimer h3{font-family:var(--serif);font-weight:700;font-size:14.5px;margin:0 0 10px;}
 .copilot-disclaimer p{font-size:13px;line-height:1.6;color:var(--muted);margin:0 0 10px;}
 .copilot-disclaimer p:last-child{margin-bottom:0;}
-.gpt-resource{margin:36px 0 0;padding-top:24px;border-top:1px solid var(--line);max-width:70ch;}
-.gpt-resource h3{font-family:var(--serif);font-weight:700;font-size:17px;margin:0 0 10px;}
-.gpt-resource p{font-size:14.5px;line-height:1.6;color:var(--muted);margin:0 0 14px;}
+.copilot-steps{margin:20px 0 0;}
+.copilot-step{margin:0 0 24px;}
+.copilot-step:last-child{margin-bottom:0;}
+.copilot-step h3{font-family:var(--serif);font-weight:700;font-size:16.5px;line-height:1.35;color:var(--ink);margin:0 0 8px;}
+.copilot-step p{font-size:14.5px;line-height:1.6;color:var(--muted);margin:0 0 10px;}
 
 /* ---------- footer (matches homepage) ---------- */
 footer{background:var(--cream);color:var(--ink);border-top:1px solid var(--line);padding:56px 0 0;margin-top:72px;}
@@ -229,9 +231,23 @@ footer{background:var(--cream);color:var(--ink);border-top:1px solid var(--line)
   <div class="stub-section">
     <h2>Build the Campaign Where You Live</h2>
     <p class="copilot-subhead">A step-by-step AI co-pilot for non-technical campaigners</p>
-    <p>Want to take action in your country but don't know where to start? You don't need to be a developer.</p>
-    <p>Use our free Global Action Co-Pilot Brief to get an AI assistant to guide you through researching, planning and building a simple local campaign tool for your country, one step at a time.</p>
-    <p class="copilot-note">No coding experience required.</p>
+    <p>You don't need to be technical to get started. Follow these three steps:</p>
+
+    <div class="copilot-steps">
+      <div class="copilot-step">
+        <h3>1. Access GPT Generator 3000</h3>
+        <p>Open GPT Generator 3000 by AI for Non-Techies. It will guide you step by step.</p>
+        <a class="global-cta" href="https://nontechies.ai/gpt-generator-3000/" target="_blank" rel="noopener">Open GPT Generator 3000 →</a>
+      </div>
+      <div class="copilot-step">
+        <h3>2. Copy the Global Action Co-Pilot Brief</h3>
+        <p>Open the brief below and click &ldquo;Copy Brief&rdquo;.</p>
+      </div>
+      <div class="copilot-step">
+        <h3>3. Start building your campaign website</h3>
+        <p>Paste the brief into the tool and follow the instructions. It will help you work through the process step by step.</p>
+      </div>
+    </div>
 
     <details class="copilot-details">
       <summary class="copilot-summary">View &amp; Copy the Co-Pilot Brief</summary>
@@ -409,12 +425,6 @@ The goal is to give ordinary people a simple way to take informed, peaceful and 
       <p>Stop Smart Glasses and Liz Hunter are not responsible for, and accept no liability for, third-party websites, tools, campaigns, content or actions independently created using this resource.</p>
       <p>You are responsible for checking that anything you create is accurate, lawful and appropriate where you live, including applicable privacy, data protection, website terms, cookies and tracking, image rights, accessibility and security requirements.</p>
       <p>AI tools can make mistakes. Always independently verify their work before publishing or acting on it.</p>
-    </div>
-
-    <div class="gpt-resource">
-      <h3>Need help creating your own custom GPT?</h3>
-      <p>GPT Generator 3000 by AI for Non-Techies guides non-technical users step by step through designing and creating a custom GPT.</p>
-      <a class="global-cta" href="https://nontechies.ai/gpt-generator-3000/" target="_blank" rel="noopener">Start with GPT Generator 3000 →</a>
     </div>
   </div>
 </main>
