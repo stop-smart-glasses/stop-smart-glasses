@@ -99,6 +99,32 @@ a{color:inherit;}
 .adapt-list li:last-child{margin-bottom:0;}
 .adapt-list li::before{content:"—";position:absolute;left:0;color:var(--violet);font-weight:700;}
 
+/* ---------- Global Action Co-Pilot Brief ---------- */
+.copilot-subhead{font-family:var(--serif);font-weight:700;font-size:17px;line-height:1.4;color:var(--violet);margin:0 0 18px;}
+.copilot-note{font-weight:600;color:var(--ink);}
+.copilot-details{margin:24px 0 0;}
+.copilot-summary{display:inline-flex;align-items:center;gap:8px;list-style:none;cursor:pointer;background:var(--yellow);color:var(--ink);font-size:14px;font-weight:700;padding:12px 20px;user-select:none;}
+.copilot-summary:hover{background:#ffe544;}
+.copilot-summary::-webkit-details-marker{display:none;}
+.copilot-summary::before{content:"▸";font-size:12px;transition:transform .15s ease;}
+.copilot-details[open] .copilot-summary::before{transform:rotate(90deg);}
+.copilot-panel{background:var(--cream-shade);padding:28px;margin:16px 0 0;max-width:70ch;}
+.copilot-panel h3{font-family:var(--serif);font-weight:700;font-size:19px;line-height:1.3;margin:0 0 10px;}
+.copilot-panel > p{font-size:14.5px;color:var(--muted);margin:0 0 16px;}
+.copilot-copy-row{display:flex;align-items:center;gap:14px;margin:0 0 16px;flex-wrap:wrap;}
+.copilot-copy-btn{background:var(--violet);color:var(--cream);font-size:14px;font-weight:700;padding:11px 20px;border:0;cursor:pointer;font-family:inherit;}
+.copilot-copy-btn:hover{background:var(--violet-deep);}
+.copilot-copied-msg{font-size:13.5px;font-weight:600;color:var(--violet-deep);opacity:0;transition:opacity .2s ease;}
+.copilot-copied-msg.show{opacity:1;}
+.copilot-textarea{width:100%;height:320px;resize:vertical;background:#fff;border:1px solid var(--line);padding:16px;font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-size:12.5px;line-height:1.6;color:var(--ink);box-sizing:border-box;}
+.copilot-disclaimer{background:#fff;border-left:3px solid var(--violet);padding:18px 20px;margin:20px 0 0;max-width:70ch;}
+.copilot-disclaimer h3{font-family:var(--serif);font-weight:700;font-size:14.5px;margin:0 0 10px;}
+.copilot-disclaimer p{font-size:13px;line-height:1.6;color:var(--muted);margin:0 0 10px;}
+.copilot-disclaimer p:last-child{margin-bottom:0;}
+.gpt-resource{margin:36px 0 0;padding-top:24px;border-top:1px solid var(--line);max-width:70ch;}
+.gpt-resource h3{font-family:var(--serif);font-weight:700;font-size:17px;margin:0 0 10px;}
+.gpt-resource p{font-size:14.5px;line-height:1.6;color:var(--muted);margin:0 0 14px;}
+
 /* ---------- footer (matches homepage) ---------- */
 footer{background:var(--cream);color:var(--ink);border-top:1px solid var(--line);padding:56px 0 0;margin-top:72px;}
 .footer__top{display:grid;grid-template-columns:1.6fr 1fr;gap:40px;align-items:start;padding-bottom:40px;}
@@ -186,7 +212,7 @@ footer{background:var(--cream);color:var(--ink);border-top:1px solid var(--line)
   <p>We've made the campaign open source so people in other countries can use what we've already built rather than starting from scratch. You can adapt the campaign for your country, add your own retailers, laws, political routes and local actions, and launch Stop Smart Glasses where you live.</p>
   <p>You do not need to be a developer to get involved.</p>
   <p>If you want to launch a local version, the open-source project contains the website, campaign structure and technical resources needed to get started.</p>
-  <a class="global-cta" href="https://github.com/lizzywizzy26/ban-meta-glasses" target="_blank" rel="noopener">View the open-source campaign on GitHub →</a>
+  <a class="global-cta" href="https://github.com/stop-smart-glasses/stop-smart-glasses" target="_blank" rel="noopener">View the open-source campaign on GitHub →</a>
 
   <div class="stub-section">
     <h2>What you can adapt</h2>
@@ -198,6 +224,198 @@ footer{background:var(--cream);color:var(--ink);border-top:1px solid var(--line)
       <li>Legal/evidence resources</li>
       <li>Campaign copy and structure</li>
     </ul>
+  </div>
+
+  <div class="stub-section">
+    <h2>Build the Campaign Where You Live</h2>
+    <p class="copilot-subhead">A step-by-step AI co-pilot for non-technical campaigners</p>
+    <p>Want to take action in your country but don't know where to start? You don't need to be a developer.</p>
+    <p>Use our free Global Action Co-Pilot Brief to get an AI assistant to guide you through researching, planning and building a simple local campaign tool for your country, one step at a time.</p>
+    <p class="copilot-note">No coding experience required.</p>
+
+    <details class="copilot-details">
+      <summary class="copilot-summary">View &amp; Copy the Co-Pilot Brief</summary>
+      <div class="copilot-panel">
+        <h3>Global Action Co-Pilot Brief</h3>
+        <p>Copy everything below and paste it into your preferred AI assistant.</p>
+        <div class="copilot-copy-row">
+          <button type="button" class="copilot-copy-btn" onclick="copyCopilotBrief(this)">Copy Brief</button>
+          <span class="copilot-copied-msg" aria-live="polite">Copied ✓</span>
+        </div>
+        <textarea class="copilot-textarea" id="copilotPromptText" readonly aria-label="Global Action Co-Pilot Brief prompt text">I want you to act as my product and technical co-pilot.
+
+I am not a developer. Your job is to help me build a simple, safe and easy-to-use local action tool supporting the Stop Smart Glasses campaign in my country.
+
+Do not assume I understand coding, hosting, APIs, databases, GitHub or technical terminology. Explain decisions in plain language and guide me one step at a time.
+
+COUNTRY:
+[INSERT COUNTRY]
+
+LANGUAGE:
+[INSERT LANGUAGE]
+
+## What I want to build
+
+I want a simple website or web tool that helps people take peaceful, lawful action concerning the promotion and mass-market sale of consumer camera-assisted and AI-assisted smart glasses.
+
+The tool should help visitors, where relevant and possible, to:
+
+1. Find relevant retailers or organisations in their area.
+2. Understand what action they can take.
+3. Contact those organisations using a ready-written message that they can review and edit themselves.
+4. Find relevant elected representatives or government bodies using reliable public information.
+5. Find petitions, consultations or other legitimate democratic actions where appropriate.
+6. Access trustworthy evidence and original sources about the issue.
+
+## Campaign scope
+
+The campaign concerns mass-market consumer glasses capable of camera-based capture or AI visual analysis of people and their surroundings.
+
+Do not automatically include specialist industrial, enterprise or controlled-workplace AR systems.
+
+Do not oppose assistive technology. Stop Smart Glasses supports smart-glasses technology that enables accessibility and independence for blind and visually impaired people, disabled people and others who rely on assistive technology.
+
+## Principles
+
+The tool must:
+
+- be peaceful, lawful and non-harassing;
+- help people contact organisations constructively;
+- never encourage threats, abuse, intimidation or targeting individuals;
+- distinguish facts from campaign opinion;
+- link to original evidence wherever possible;
+- never invent retailers, addresses, email addresses, politicians, laws, statistics or sources;
+- make clear when information has not been verified;
+- minimise collection of personal information;
+- collect no personal information unless genuinely necessary;
+- avoid behavioural tracking and advertising technology unless there is a compelling reason;
+- be accessible on mobile devices and usable with assistive technologies.
+
+## Start with research, not code
+
+Before building anything, help me establish:
+
+A. What retailers sell or promote relevant consumer smart glasses in my country.
+B. What reliable public data exists for their locations and contact details.
+C. Which government bodies, elected representatives or regulators are relevant.
+D. What petitions, consultations or democratic processes already exist.
+E. Which laws and regulations may be relevant.
+F. What privacy obligations will apply to the website/tool itself.
+G. Whether any proposed feature requires personal data, cookies, analytics, location information or third-party services.
+
+Use authoritative sources for legal and government information.
+
+Do not give me legal advice or claim that a law definitely applies where that has not been established.
+
+Show me your sources and clearly identify anything that still requires human verification.
+
+## Build the simplest useful version first
+
+Do not build an unnecessarily complicated platform.
+
+Prefer a simple website that:
+
+- works well on phones;
+- is easy for a non-technical person to maintain;
+- uses minimal dependencies;
+- collects as little data as possible;
+- does not require user accounts;
+- does not require visitors to provide their name or email address;
+- does not send messages automatically on somebody's behalf;
+- lets visitors review and choose whether to send any suggested message themselves.
+
+If location search is useful, first investigate the least privacy-invasive way to implement it.
+
+Do not expose API keys, passwords or other secrets in public website code.
+
+## Work with me step by step
+
+Do not build the entire project immediately.
+
+First ask me the minimum questions you need about my country and what I want the first version to achieve.
+
+Then give me:
+
+1. A plain-English plan.
+2. Proposed features for version one.
+3. What information/data we need.
+4. Privacy and security considerations.
+5. Anything requiring human verification.
+6. The simplest recommended technical approach.
+7. An estimated sequence for building and testing it.
+
+Wait for my approval before beginning the build.
+
+When we start building, complete one stage at a time and tell me exactly what you are doing and why.
+
+Never make something live, publish it, change DNS, purchase a service, send communications or make an irreversible change without asking me first.
+
+## Before publishing
+
+Building the tool is only part of the job. Before helping me publish my campaign website, make sure we have addressed the things that protect both my visitors and me.
+
+At a minimum, help me check:
+
+- Privacy: What data my website collects, why, where it goes and how long it is kept, including third-party services, forms, analytics and location/postcode tools.
+- Terms: Whether I need website terms and what they should cover.
+- Cookies and tracking: Whether the site uses cookies, analytics, embedded services or other tracking technologies, and what consent or disclosures may be required.
+- Image rights: That I have permission or a valid licence for every photograph, graphic or other piece of third-party content I publish, including any attribution requirements. Keep evidence of licences and attribution requirements.
+- Accuracy: That retailer details, government contacts, legal claims, statistics and other factual information have been verified.
+- Accessibility and security: That the site has been tested and is not unnecessarily collecting or exposing people's personal information.
+
+Do not assume that because you helped me build something, these requirements have automatically been dealt with.
+
+Flag anything that needs independent professional or legal advice.
+
+Do not make claims about the law unless they can be supported by reliable sources.
+
+## Test before launch
+
+Before recommending publication, help me check:
+
+- every link;
+- every retailer/contact record;
+- mobile display;
+- accessibility basics;
+- privacy implications;
+- forms and location searches;
+- spelling and wording;
+- factual claims and sources;
+- security;
+- whether any personal information is being collected;
+- whether the privacy notice accurately describes what the tool actually does;
+- website terms;
+- cookies and tracking;
+- image rights and required credits.
+
+Give me a final checklist of anything that requires a human to verify.
+
+## My responsibility
+
+Anything you help me create is ultimately my responsibility.
+
+Remind me that I must independently check the legal, privacy, data protection, website terms, cookies and tracking, image rights, accessibility and security requirements that apply where I live before publishing.
+
+The goal is not to build an enormous technology platform.
+
+The goal is to give ordinary people a simple way to take informed, peaceful and practical action — even if the person building it has never written a line of code before.</textarea>
+      </div>
+    </details>
+
+    <div class="copilot-disclaimer">
+      <h3>Important</h3>
+      <p>This resource is provided as general guidance to help people develop their own independent campaign websites and tools.</p>
+      <p>Any website, campaign, tool or content created using this resource is the responsibility of its creator and is independent of Stop Smart Glasses and Liz Hunter.</p>
+      <p>Stop Smart Glasses and Liz Hunter are not responsible for, and accept no liability for, third-party websites, tools, campaigns, content or actions independently created using this resource.</p>
+      <p>You are responsible for checking that anything you create is accurate, lawful and appropriate where you live, including applicable privacy, data protection, website terms, cookies and tracking, image rights, accessibility and security requirements.</p>
+      <p>AI tools can make mistakes. Always independently verify their work before publishing or acting on it.</p>
+    </div>
+
+    <div class="gpt-resource">
+      <h3>Need help creating your own custom GPT?</h3>
+      <p>GPT Generator 3000 by AI for Non-Techies guides non-technical users step by step through designing and creating a custom GPT.</p>
+      <a class="global-cta" href="https://nontechies.ai/gpt-generator-3000/" target="_blank" rel="noopener">Start with GPT Generator 3000 →</a>
+    </div>
   </div>
 </main>
 
@@ -220,7 +438,7 @@ footer{background:var(--cream);color:var(--ink);border-top:1px solid var(--line)
     <div class="footer__replicate">
       <p class="footer__replicate-label">Global action</p>
       <p class="footer__replicate-copy">This starts in the UK and Ireland. But smart glasses are a global issue. The Stop Smart Glasses website is open source – designed to be copied and adapted by anyone who wants to launch the campaign in their country.</p>
-      <a class="footer__replicate-cta" href="https://github.com/lizzywizzy26/ban-meta-glasses" target="_blank" rel="noopener">View on GitHub →</a>
+      <a class="footer__replicate-cta" href="https://github.com/stop-smart-glasses/stop-smart-glasses" target="_blank" rel="noopener">View on GitHub →</a>
     </div>
   </div>
   <div class="wrap footer__legal">
@@ -252,6 +470,24 @@ footer{background:var(--cream);color:var(--ink);border-top:1px solid var(--line)
     }
   });
 })();
+
+function copyCopilotBrief(btn) {
+  var ta = document.getElementById('copilotPromptText');
+  var msg = btn.parentElement.querySelector('.copilot-copied-msg');
+  function showCopied() {
+    if (!msg) return;
+    msg.classList.add('show');
+    setTimeout(function () { msg.classList.remove('show'); }, 1800);
+  }
+  if (navigator.clipboard && navigator.clipboard.writeText) {
+    navigator.clipboard.writeText(ta.value).then(showCopied);
+  } else {
+    ta.focus();
+    ta.select();
+    document.execCommand('copy');
+    showCopied();
+  }
+}
 </script>
 </body>
 </html>
