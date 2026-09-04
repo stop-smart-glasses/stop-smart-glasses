@@ -59,11 +59,26 @@ a{color:inherit;}
   .site-nav__mobile-menu a{display:block;padding:16px 32px;border-bottom:1px solid var(--line);font-size:16px;text-decoration:none;color:var(--ink);}
 }
 
-/* ---------- legal-style hero (matches Terms/Privacy/FAQs) ---------- */
-.legal-hero{padding:8px 0 36px;border-bottom:1px solid var(--line);max-width:74ch;}
-.legal-hero h1{font-family:var(--serif);font-weight:700;font-size:clamp(30px,4vw,44px);line-height:1.1;margin:0 0 14px;}
-.legal-hero p{font-size:16px;line-height:1.6;color:var(--muted);margin:0;}
-.legal-hero__date{font-size:13px;color:var(--muted);margin-top:14px;}
+/* ---------- press hero (two-column, matches Resources' res-hero pattern) ---------- */
+.press-hero{
+  display:grid;
+  grid-template-columns:1.3fr 1fr;
+  gap:48px;
+  align-items:center;
+  padding:8px 0 44px;
+  border-bottom:1px solid var(--line);
+}
+.press-hero h1{font-family:var(--serif);font-weight:700;font-size:clamp(30px,4vw,44px);line-height:1.1;margin:0 0 14px;}
+.press-hero p{font-size:16px;line-height:1.6;color:var(--muted);max-width:60ch;margin:0 0 14px;}
+.press-hero p:last-child{margin-bottom:0;}
+.press-hero p a{color:var(--violet);text-decoration:none;border-bottom:1px solid var(--violet);font-weight:600;}
+.press-hero p a:hover{color:var(--violet-deep);border-color:var(--violet-deep);}
+.press-hero__media{aspect-ratio:4/5;overflow:hidden;background:var(--cream-shade);}
+.press-hero__media img{width:100%;height:100%;object-fit:cover;display:block;}
+@media (max-width:760px){
+  .press-hero{grid-template-columns:1fr;gap:24px;}
+  .press-hero__media{aspect-ratio:16/10;}
+}
 .legal-body{padding:48px 0 72px;}
 
 /* ---------- press entries (same pattern as Resources' res-entry) ---------- */
@@ -150,9 +165,14 @@ footer{background:var(--cream);color:var(--ink);border-top:1px solid var(--line)
   </div>
 </nav>
 
-<header class="wrap legal-hero">
-  <h1>Stop Smart Glasses in the Press</h1>
-  <p>This page brings together independent press and broadcast coverage of the Stop Smart Glasses campaign.</p>
+<header class="wrap press-hero">
+  <div>
+    <h1>Stop Smart Glasses in the press</h1>
+    <p>This page brings together independent press and broadcast coverage of the Stop Smart Glasses campaign.</p>
+    <p>If your news organisation want to speak to Liz Hunter or Guy Holder of Stop Smart Glasses, please email: <a href="mailto:press@stopsmartglasses.com">press@stopsmartglasses.com</a></p>
+  </div>
+  <!-- Hero image pending: rights/licence and credit not yet confirmed — see chat -->
+  <div class="press-hero__media"></div>
 </header>
 
 <main class="wrap legal-body">
