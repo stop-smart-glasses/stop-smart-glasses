@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Terms — Stop Smart Glasses</title>
-<meta name="description" content="Plain-English terms for using the Stop Smart Glasses website and its retailer database.">
+<title>Press — Stop Smart Glasses</title>
+<meta name="description" content="Independent press and broadcast coverage of the Stop Smart Glasses campaign.">
 <style>
 :root{
   --violet:#5B22F6;
@@ -59,22 +59,23 @@ a{color:inherit;}
   .site-nav__mobile-menu a{display:block;padding:16px 32px;border-bottom:1px solid var(--line);font-size:16px;text-decoration:none;color:var(--ink);}
 }
 
-/* ---------- legal content ---------- */
+/* ---------- legal-style hero (matches Terms/Privacy/FAQs) ---------- */
 .legal-hero{padding:8px 0 36px;border-bottom:1px solid var(--line);max-width:74ch;}
 .legal-hero h1{font-family:var(--serif);font-weight:700;font-size:clamp(30px,4vw,44px);line-height:1.1;margin:0 0 14px;}
 .legal-hero p{font-size:16px;line-height:1.6;color:var(--muted);margin:0;}
 .legal-hero__date{font-size:13px;color:var(--muted);margin-top:14px;}
-.legal-body{padding:44px 0 72px;max-width:74ch;}
-.legal-section{margin:0 0 40px;}
-.legal-section:last-of-type{margin-bottom:0;}
-.legal-section h2{font-family:var(--serif);font-weight:700;font-size:clamp(19px,2.1vw,23px);line-height:1.25;margin:0 0 14px;padding-bottom:8px;border-bottom:2px solid var(--ink);}
-.legal-section p{font-size:15px;line-height:1.65;color:var(--ink);margin:0 0 14px;}
-.legal-section ul, .legal-section ol{margin:0 0 14px;padding-left:22px;}
-.legal-section li{font-size:15px;line-height:1.6;margin-bottom:6px;}
-.legal-section a{color:var(--violet);text-decoration:none;border-bottom:1px solid var(--violet);font-weight:600;}
-.legal-section a:hover{color:var(--violet-deep);border-color:var(--violet-deep);}
-.legal-callout{background:var(--cream-shade);border-left:3px solid var(--violet);padding:16px 18px;margin:0 0 14px;}
-.legal-callout p{margin:0;font-size:14px;color:var(--ink);}
+.legal-body{padding:48px 0 72px;}
+
+/* ---------- press entries (same pattern as Resources' res-entry) ---------- */
+.press-section{max-width:72ch;margin:0;}
+.press-entry{margin:0 0 30px;padding-bottom:30px;border-bottom:1px solid var(--line);}
+.press-entry:last-child{margin-bottom:0;padding-bottom:0;border-bottom:none;}
+.press-entry__meta{font-size:12.5px;font-weight:700;text-transform:uppercase;letter-spacing:.03em;color:var(--violet);margin:0 0 8px;}
+.press-entry__format{display:inline-block;font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.03em;color:var(--muted);background:var(--cream-shade);padding:2px 7px;margin-left:8px;border-radius:3px;vertical-align:1px;}
+.press-entry h3{font-family:var(--serif);font-weight:700;font-size:19px;line-height:1.35;margin:0 0 8px;}
+.press-entry p{font-size:14.5px;line-height:1.6;color:var(--muted);margin:0 0 10px;max-width:64ch;}
+.press-entry__link{display:inline-block;font-size:13px;font-weight:700;color:var(--violet);text-decoration:none;border-bottom:1px solid var(--violet);word-break:break-word;}
+.press-entry__link:hover{color:var(--violet-deep);border-color:var(--violet-deep);}
 
 /* ---------- footer (matches homepage) ---------- */
 footer{background:var(--cream);color:var(--ink);border-top:1px solid var(--line);padding:56px 0 0;margin-top:24px;}
@@ -150,66 +151,40 @@ footer{background:var(--cream);color:var(--ink);border-top:1px solid var(--line)
 </nav>
 
 <header class="wrap legal-hero">
-  <h1>Terms</h1>
-  <p>Plain-English terms for using this website and the retailer database it publishes.</p>
-  <p class="legal-hero__date">Effective / last updated: 22 August 2026</p>
+  <h1>Stop Smart Glasses in the Press</h1>
+  <p>This page brings together independent press and broadcast coverage of the Stop Smart Glasses campaign.</p>
 </header>
 
 <main class="wrap legal-body">
+  <!--
+    Press entries: reverse chronological order, newest first.
+    To add new coverage, copy a .press-entry block and insert it in
+    the correct chronological position within this section.
+  -->
+  <section class="press-section">
 
-  <section class="legal-section" id="purpose">
-    <h2>What this website is for</h2>
-    <p>Stop Smart Glasses is an independent campaign asking retailers, opticians and manufacturers to stop selling camera-equipped smart glasses. This website exists to explain why, to help you take action, and to publish a database of retailers we've identified as selling these products, so you can contact them directly.</p>
+    <div class="press-entry">
+      <p class="press-entry__meta">TechRadar · August 2026</p>
+      <h3>"We don't want another damaged generation" — Inside the grassroots campaign demanding a ban on smart glasses</h3>
+      <p>A feature on the grassroots origins of the campaign, covering how founder Liz Hunter and petition creator Guy Holder came together to build Stop Smart Glasses.</p>
+      <a class="press-entry__link" href="https://www.techradar.com/vpn/vpn-privacy-security/we-dont-want-another-damaged-generation-inside-the-grassroots-campaign-demanding-a-ban-on-smart-glasses" target="_blank" rel="noopener">techradar.com ↗</a>
+    </div>
+
+    <div class="press-entry">
+      <p class="press-entry__meta">The Irish Times · 21 August 2026</p>
+      <h3>New campaign aims to ban smart glasses</h3>
+      <p>Coverage of the campaign's launch, its call for an immediate ban on the sale and promotion of camera-equipped smart glasses, and the retailer database and action tools published on this site.</p>
+      <a class="press-entry__link" href="https://www.irishtimes.com/business/2026/08/21/new-campaign-aims-to-ban-smart-glasses/" target="_blank" rel="noopener">irishtimes.com ↗</a>
+    </div>
+
+    <div class="press-entry">
+      <p class="press-entry__meta">Cybernews · August 2026</p>
+      <h3>"Pervert glasses" tracker exposes UK retailers</h3>
+      <p>Reporting on the retailer-tracking tool published on this site, which maps UK stockists of camera-equipped smart glasses so shoppers can push for a ban.</p>
+      <a class="press-entry__link" href="https://cybernews.com/privacy/pervert-glasses-tracker-exposes-uk-retailers/" target="_blank" rel="noopener">cybernews.com ↗</a>
+    </div>
+
   </section>
-
-  <section class="legal-section" id="database">
-    <h2>About the retailer database</h2>
-    <p>We aim to provide accurate, useful public-interest information — but this is a developing database, compiled and verified on an ongoing basis, and it will never be guaranteed to be permanently complete or fully up to date. We welcome corrections.</p>
-    <p>Before a branch appears in our results, we look for real, first-party evidence that it's genuinely a physical location and that it's been specifically evidenced as selling the product — not just that the retailer sells it somewhere. We record how each entry was verified and when it was last checked.</p>
-    <p>Even so:</p>
-    <ul>
-      <li>Retailer details (addresses, contact routes, opening arrangements) can change after we've checked them.</li>
-      <li>A branch appearing in our results means we found evidence it has stocked or offered the relevant product — it is <strong>not</strong> a live, real-time stock check, and we cannot guarantee a specific item is in stock or on display right now.</li>
-      <li>We distinguish, internally, between confirming a shop exists, confirming a specific branch has been evidenced as selling the product, and confirming current live stock — the database reflects the first two, not the third, unless we say otherwise for a specific entry.</li>
-      <li>A retailer may stop, or start, selling these products at any time without us knowing immediately.</li>
-    </ul>
-  </section>
-
-  <section class="legal-section" id="good-faith">
-    <h2>Information provided in good faith</h2>
-    <p>Everything on this site is provided in good faith and for general information and campaigning purposes. We do our best to keep it accurate, but we can't guarantee it's error-free, complete, or current at the moment you read it.</p>
-  </section>
-
-  <section class="legal-section" id="links">
-    <h2>External links</h2>
-    <p>This site links to external websites — news coverage, official sources, retailers, the UK Parliament petition site, and others. We don't control those sites and aren't responsible for their content, accuracy or availability. A link doesn't mean we endorse everything a linked site says.</p>
-  </section>
-
-  <section class="legal-section" id="liability">
-    <h2>Limitation of liability</h2>
-    <p>You use this website, and act on the information in it, at your own discretion. We aren't liable for loss or inconvenience arising from relying on information here that turns out to be outdated or inaccurate — but if you spot something wrong, please tell us, and we'll fix it.</p>
-  </section>
-
-  <section class="legal-section" id="ip">
-    <h2>Using our content</h2>
-    <p>The campaign's own text, message templates and design are here for the campaign's purposes — you're welcome to use the email/message templates for the actions the site describes. The website's underlying code is open source (see our <a href="/global-action/">Global action</a> page) if you want to adapt the campaign for your own country. If you want to reuse or republish other content more broadly, please ask us first.</p>
-  </section>
-
-  <section class="legal-section" id="conduct">
-    <h2>Using this website appropriately</h2>
-    <p>Please don't misuse this site — for example, by trying to disrupt it, scrape it at a harmful rate, or use it to harass anyone (including staff at any retailer listed here). We want this to remain a constructive, evidence-based campaign tool.</p>
-  </section>
-
-  <section class="legal-section" id="corrections">
-    <h2>Reporting errors or suggesting corrections</h2>
-    <p>Found something wrong — a retailer that's closed, details that have changed, or a branch that shouldn't be listed? We welcome corrections. <a href="/privacy/#contact">See our contact details</a>.</p>
-  </section>
-
-  <section class="legal-section" id="changes">
-    <h2>Changes to these terms</h2>
-    <p>We may update these terms as the campaign and its database develop. We'll update the date at the top of this page when we do.</p>
-  </section>
-
 </main>
 
 <footer>
@@ -225,7 +200,7 @@ footer{background:var(--cream);color:var(--ink);border-top:1px solid var(--line)
         <a href="/global-action/">Global action</a>
         <a href="/about/">About</a>
         <a href="/faqs/">FAQs</a>
-        <a href="/press/">Press</a>
+        <a href="/press/" class="is-current">Press</a>
         <a href="https://petition.parliament.uk/petitions/769206" target="_blank" rel="noopener">Sign the petition</a>
       </nav>
       <p class="footer__statement">The database shows where they're sold.<br>The campaign gives people the tools to&nbsp;act.</p>
@@ -239,7 +214,7 @@ footer{background:var(--cream);color:var(--ink);border-top:1px solid var(--line)
   <div class="wrap footer__legal">
     <nav class="footer__links" aria-label="Legal" style="margin-bottom:10px;">
       <a href="/privacy/">Privacy</a>
-      <a href="/terms/" class="is-current">Terms</a>
+      <a href="/terms/">Terms</a>
       <a href="/image-credits/">Image Credits</a>
     </nav>
     <p>Stop Smart Glasses is an independent campaign and is not affiliated with, endorsed by or associated with Meta or Ray-Ban.</p>
