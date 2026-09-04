@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FAQs — Stop Smart Glasses</title>
+<meta name="description" content="Answers to common questions about what Stop Smart Glasses is campaigning for, what's in and out of scope, and why we believe a ban is the right approach.">
+<style>
+:root{
+  --violet:#5B22F6;
+  --violet-deep:#3D0FC7;
+  --cream:#F6F2EB;
+  --cream-shade:#EEE8DB;
+  --yellow:#FFDB00;
+  --ink:#111111;
+  --muted:#5c5850;
+  --line:#DAD3C2;
+  --serif: 'Fraunces', Georgia, 'Iowan Old Style', 'Palatino Linotype', ui-serif, serif;
+  --sans: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, ui-sans-serif, sans-serif;
+}
+*{box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+body{margin:0;background:var(--cream);color:var(--ink);font-family:var(--sans);line-height:1.5;-webkit-font-smoothing:antialiased;}
+a{color:inherit;}
+.wrap{max-width:1180px;margin:0 auto;padding:0 32px;}
+
+/* ---------- nav (matches homepage) ---------- */
+.site-nav{padding:20px 0;}
+.site-nav__row{display:flex;align-items:center;justify-content:space-between;width:100%;gap:20px;}
+.site-nav__wordmark{display:block;text-decoration:none;color:var(--ink);flex:0 0 auto;line-height:1;}
+.wm-top{display:flex;align-items:center;gap:4px;}
+.wm-ban{display:inline-block;font-family:var(--serif);font-weight:700;font-size:38px;line-height:0.85;letter-spacing:-.01em;}
+.wm-glasses{width:41px;height:auto;flex:0 0 auto;display:block;}
+.wm-sub{display:block;font-family:var(--serif);font-weight:700;font-size:13px;line-height:1.05;letter-spacing:.04em;margin-top:3px;color:var(--ink);white-space:nowrap;}
+.ink-wash{position:relative;z-index:0;display:inline-block;color:var(--ink);white-space:nowrap;}
+.ink-wash::before{content:"";position:absolute;inset:-0.1em -0.06em -0.16em -0.04em;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 600 140' preserveAspectRatio='none'%3E%3Cpath d='M3,26 C55,6 120,32 190,14 C270,-6 350,24 430,9 C500,-4 560,18 597,15 L598,112 C545,132 480,102 410,120 C335,140 250,108 175,124 C110,138 45,116 3,120 Z' fill='%23FFDB00'/%3E%3C/svg%3E");background-repeat:no-repeat;background-size:100% 100%;transform:rotate(-1deg);z-index:-1;}
+.site-nav__links{display:flex;align-items:center;gap:20px;list-style:none;margin:0;padding:0;flex:1 1 auto;justify-content:center;}
+.site-nav__links a{font-size:13px;white-space:nowrap;text-decoration:none;color:var(--ink);border-bottom:1px solid transparent;padding-bottom:2px;}
+.site-nav__links a:hover{border-bottom-color:var(--violet);}
+.site-nav__links a.is-current{border-bottom-color:var(--violet);font-weight:600;}
+.site-nav__actions{display:flex;align-items:center;gap:14px;flex:0 0 auto;}
+.site-nav__cta{font-size:14px;font-weight:600;white-space:nowrap;background:var(--violet);color:var(--cream);padding:10px 18px;text-decoration:none;}
+.site-nav__cta:hover{background:var(--violet-deep);}
+.site-nav__toggle{display:none;flex-direction:column;justify-content:center;align-items:center;gap:4px;width:36px;height:36px;padding:0;background:none;border:0;cursor:pointer;flex:0 0 auto;}
+.site-nav__toggle span{display:block;width:20px;height:2px;background:var(--ink);}
+.site-nav__toggle[aria-expanded="true"] span:nth-child(1){transform:translateY(6px) rotate(45deg);}
+.site-nav__toggle[aria-expanded="true"] span:nth-child(2){opacity:0;}
+.site-nav__toggle[aria-expanded="true"] span:nth-child(3){transform:translateY(-6px) rotate(-45deg);}
+.site-nav__mobile-menu{display:none;}
+@media (max-width:900px){
+  .wm-ban{font-size:24px;}
+  .wm-glasses{width:26px;}
+  .wm-top{gap:3px;}
+  .wm-sub{font-size:9px;margin-top:2px;}
+  .site-nav__links{display:none;}
+  .site-nav__toggle{display:flex;}
+  .site-nav__mobile-menu{flex-direction:column;background:var(--cream);border-top:1px solid var(--line);margin-top:20px;}
+  .site-nav__mobile-menu:not([hidden]){display:flex;}
+  .site-nav__mobile-menu a{display:block;padding:16px 32px;border-bottom:1px solid var(--line);font-size:16px;text-decoration:none;color:var(--ink);}
+}
+
+/* ---------- legal content ---------- */
+.legal-hero{padding:8px 0 36px;border-bottom:1px solid var(--line);max-width:74ch;}
+.legal-hero h1{font-family:var(--serif);font-weight:700;font-size:clamp(30px,4vw,44px);line-height:1.1;margin:0 0 14px;}
+.legal-hero p{font-size:16px;line-height:1.6;color:var(--muted);margin:0;}
+.legal-hero__date{font-size:13px;color:var(--muted);margin-top:14px;}
+.legal-body{padding:44px 0 72px;max-width:74ch;}
+.legal-section{margin:0 0 40px;}
+.legal-section:last-of-type{margin-bottom:0;}
+.legal-section h2{font-family:var(--serif);font-weight:700;font-size:clamp(19px,2.1vw,23px);line-height:1.25;margin:0 0 14px;padding-bottom:8px;border-bottom:2px solid var(--ink);}
+.legal-section h3{font-family:var(--serif);font-weight:700;font-size:16.5px;line-height:1.4;margin:26px 0 8px;}
+.legal-section h3:first-of-type{margin-top:0;}
+.legal-section p{font-size:15px;line-height:1.65;color:var(--ink);margin:0 0 14px;}
+.legal-section ul, .legal-section ol{margin:0 0 14px;padding-left:22px;}
+.legal-section li{font-size:15px;line-height:1.6;margin-bottom:6px;}
+.legal-section a{color:var(--violet);text-decoration:none;border-bottom:1px solid var(--violet);font-weight:600;}
+.legal-section a:hover{color:var(--violet-deep);border-color:var(--violet-deep);}
+.legal-callout{background:var(--cream-shade);border-left:3px solid var(--violet);padding:16px 18px;margin:0 0 14px;}
+.legal-callout p{margin:0;font-size:14px;color:var(--ink);}
+.toc{background:var(--cream-shade);padding:20px 22px;margin:0 0 44px;}
+.toc h2{font-family:var(--serif);font-weight:700;font-size:14px;text-transform:uppercase;letter-spacing:.04em;margin:0 0 10px;border:none;padding:0;}
+.toc ol{margin:0;padding-left:20px;columns:2;column-gap:24px;}
+.toc li{font-size:13.5px;margin-bottom:6px;}
+.toc a{color:var(--ink);text-decoration:none;border-bottom:1px solid var(--line);}
+.toc a:hover{border-bottom-color:var(--violet);}
+@media (max-width:600px){ .toc ol{columns:1;} }
+
+/* ---------- footer (matches homepage) ---------- */
+footer{background:var(--cream);color:var(--ink);border-top:1px solid var(--line);padding:56px 0 0;margin-top:24px;}
+.footer__top{display:grid;grid-template-columns:1.6fr 1fr;gap:40px;align-items:start;padding-bottom:40px;}
+.footer__mark{font-family:var(--serif);font-weight:700;font-size:clamp(21px,2vw,25px);letter-spacing:-.01em;margin:0 0 10px;}
+.footer__tagline{font-family:var(--serif);font-weight:700;font-size:clamp(18px,1.6vw,21px);line-height:1.3;margin:0 0 12px;color:var(--ink);}
+.footer__desc{font-size:14px;color:var(--muted);margin:0 0 20px;max-width:44ch;}
+.footer__links{display:flex;flex-wrap:wrap;row-gap:8px;margin:0 0 20px;}
+.footer__links a{font-size:13.5px;color:var(--ink);text-decoration:none;border-bottom:1px solid transparent;padding-bottom:1px;}
+.footer__links a:hover{border-bottom-color:var(--violet);}
+.footer__links a[aria-disabled="true"]{color:var(--muted);cursor:default;}
+.footer__links a[aria-disabled="true"]:hover{border-bottom-color:transparent;}
+.footer__links a+a::before{content:"·";margin:0 12px;color:var(--line);}
+.footer__links a.is-current{font-weight:600;border-bottom-color:var(--violet);}
+.footer__statement{font-family:var(--serif);font-weight:700;font-size:clamp(15px,1.3vw,18px);line-height:1.4;max-width:40ch;margin:0;color:var(--ink);}
+.footer__replicate{background:var(--violet);color:var(--cream);padding:26px 24px;}
+.footer__replicate-label{font-family:var(--serif);font-weight:700;font-size:12px;letter-spacing:.06em;text-transform:uppercase;color:var(--yellow);margin:0 0 12px;}
+.footer__replicate-copy{font-size:13.5px;line-height:1.5;color:#ede7fb;margin:0 0 18px;}
+.footer__replicate-cta{display:inline-block;background:var(--yellow);color:var(--ink);font-size:13.5px;font-weight:700;padding:10px 18px;text-decoration:none;}
+.footer__replicate-cta:hover{background:#ffe544;}
+.footer__legal{border-top:1px solid var(--line);padding:20px 0 28px;font-size:12px;color:var(--muted);}
+.footer__legal p{margin:0 0 6px;}
+.footer__legal a{color:var(--muted);text-decoration:underline;}
+@media (max-width:900px){ .footer__top{grid-template-columns:1fr;gap:28px;} }
+
+.proto-banner{background:var(--ink);color:var(--yellow);font-size:12px;text-align:center;padding:8px 12px;letter-spacing:.03em;}
+</style>
+</head>
+<body>
+
+<div class="proto-banner">Public beta — Stop Smart Glasses launches in public beta, with further campaign tools being added during the beta period.</div>
+
+<nav class="site-nav">
+  <div class="wrap site-nav__row">
+    <a class="site-nav__wordmark" href="/" aria-label="Stop Smart Glasses — homepage">
+      <span class="wm-top">
+        <span class="wm-ban ink-wash">STOP</span>
+        <svg class="wm-glasses" viewBox="0 0 128 52" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <rect x="14" y="14" width="38" height="28" rx="7" fill="none" stroke="#1a1a1a" stroke-width="4"/>
+          <rect x="76" y="14" width="38" height="28" rx="7" fill="none" stroke="#1a1a1a" stroke-width="4"/>
+          <path d="M52 24 H76" fill="none" stroke="#1a1a1a" stroke-width="4" stroke-linecap="round"/>
+          <path d="M14 22 L2 16" fill="none" stroke="#1a1a1a" stroke-width="4" stroke-linecap="round"/>
+          <path d="M114 22 L126 16" fill="none" stroke="#1a1a1a" stroke-width="4" stroke-linecap="round"/>
+          <path d="M99,9 C106,6 113,8 115,13 C117,18 114,22 108,23 C102,24 97,21 96,16 C95,12 96,11 99,9 Z" fill="#FFDB00"/>
+          <circle cx="106" cy="16" r="3.4" fill="#1a1a1a"/>
+        </svg>
+      </span>
+      <span class="wm-sub">SMART&nbsp;GLASSES</span>
+    </a>
+    <ul class="site-nav__links">
+      <li><a href="/#take-action">Take action</a></li>
+      <li><a href="/#why-this-matters">Why this matters</a></li>
+      <li><a href="/exemption-for-disabled-people/">Accessibility</a></li>
+      <li><a href="/resources/">Resources</a></li>
+      <li><a href="/global-action/">Global action</a></li>
+      <li><a href="/about/">About</a></li>
+    </ul>
+    <div class="site-nav__actions">
+      <a class="site-nav__cta" href="https://petition.parliament.uk/petitions/769206" target="_blank" rel="noopener">Sign the petition</a>
+      <button type="button" class="site-nav__toggle" id="navToggle" aria-expanded="false" aria-controls="navMobileMenu" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+  <div class="site-nav__mobile-menu" id="navMobileMenu" hidden>
+    <a href="/#take-action">Take action</a>
+    <a href="/#why-this-matters">Why this matters</a>
+    <a href="/exemption-for-disabled-people/">Accessibility</a>
+    <a href="/resources/">Resources</a>
+    <a href="/global-action/">Global action</a>
+    <a href="/about/">About</a>
+  </div>
+</nav>
+
+<header class="wrap legal-hero">
+  <h1>Frequently Asked Questions</h1>
+  <p>Answers to the questions we're asked most often about what Stop Smart Glasses is campaigning for, what's in and out of scope, and why we believe a ban is the right approach.</p>
+  <p class="legal-hero__date">Effective / last updated: 4 September 2026</p>
+</header>
+
+<main class="wrap legal-body">
+
+  <nav class="toc" aria-label="Contents">
+    <h2>On this page</h2>
+    <ol>
+      <li><a href="#q1">What does Stop Smart Glasses mean by "smart glasses"?</a></li>
+      <li><a href="#q2">What exactly is the campaign asking for?</a></li>
+      <li><a href="#q3">Is the campaign asking for a ban on wearing or using smart glasses in public, or only on the sale and promotion of them?</a></li>
+      <li><a href="#q4">What kinds of smart glasses does the campaign want banned?</a></li>
+      <li><a href="#q5">Are microphones and audio recording in scope, or is this just about cameras?</a></li>
+      <li><a href="#q6">What if the glasses use a camera for AI but don't save a photograph or video?</a></li>
+      <li><a href="#q7">Does the campaign want to ban smart glasses used by businesses and workplaces?</a></li>
+      <li><a href="#q8">What about smart glasses used by blind, visually impaired and disabled people?</a></li>
+      <li><a href="#q9">What about prescription smart glasses?</a></li>
+      <li><a href="#q10">Why focus on glasses when people can already film with smartphones?</a></li>
+      <li><a href="#q11">Why does the campaign want a ban now, rather than waiting for better safeguards?</a></li>
+      <li><a href="#q12">Why regulate the product rather than punish people who misuse it?</a></li>
+      <li><a href="#q13">Isn't filming in public already legal?</a></li>
+      <li><a href="#q14">What privacy risks does the campaign believe are distinctive here?</a></li>
+      <li><a href="#q15">What does existing UK law already cover — and what does it not cover?</a></li>
+      <li><a href="#q16">Why does the campaign believe existing law is insufficient?</a></li>
+      <li><a href="#q17">What is the legal basis for the campaign's proposed ban?</a></li>
+      <li><a href="#q18">Is Stop Smart Glasses anti-technology?</a></li>
+      <li><a href="#q19">Who is behind the campaign?</a></li>
+      <li><a href="#q20">Has the campaign received legal advice?</a></li>
+      <li><a href="#q21">How can someone support the campaign or learn more?</a></li>
+    </ol>
+  </nav>
+
+  <section class="legal-section" id="about-campaign">
+    <h2>About the campaign</h2>
+
+    <h3 id="q1">What does Stop Smart Glasses mean by "smart glasses"?</h3>
+    <p>When we talk about "smart glasses," we mean the specific category we're campaigning about: consumer eyewear with hidden or inconspicuous technology — a camera, a microphone, or both — capable of recording, capturing, processing or otherwise surveilling the people and surroundings around the wearer, like Ray-Ban Meta glasses. We are not talking about every device that could be called "smart glasses." See our full answer on scope below.</p>
+
+    <h3 id="q2">What exactly is the campaign asking for?</h3>
+    <p>We're asking retailers, opticians and manufacturers to stop selling and promoting, as an everyday consumer product, glasses with hidden or inconspicuous recording, capture, processing or surveillance capability. We support the UK Parliament petition calling for a ban on the sale and promotion of smart glasses with recording capability. We also want Government to prohibit wearing or using these devices in public places — see the next question.</p>
+
+    <h3 id="q3">Is the campaign asking for a ban on wearing or using smart glasses in public, or only on the sale and promotion of them?</h3>
+    <p>Both. The UK Parliament petition we support formally asks for an immediate ban on the sale and promotion of smart glasses with recording capability. Our campaign's own position goes further: alongside ending mass-market sale and promotion, we want Government to prohibit wearing or using these devices in public places too. Stopping new sales alone wouldn't address the people who already own a pair — we believe both parts are needed to properly address the risk to bystanders.</p>
+  </section>
+
+  <section class="legal-section" id="scope">
+    <h2>Scope — what's in, what's out</h2>
+
+    <h3 id="q4">What kinds of smart glasses does the campaign want banned?</h3>
+    <p>Our campaign concerns consumer smart glasses that contain hidden or inconspicuous technology capable of recording, capturing, processing or facilitating surveillance of people or the environment around the wearer. This includes:</p>
+    <ul>
+      <li>cameras;</li>
+      <li>microphones or other audio-recording capability;</li>
+      <li>camera-based AI systems that can visually capture or analyse what the wearer sees — including where no conventional photograph or video is ultimately saved (see below).</li>
+    </ul>
+    <p>It does <strong>not</strong> mean:</p>
+    <ul>
+      <li>ordinary glasses, with no recording or capture capability of any kind;</li>
+      <li>wearable technology in general;</li>
+      <li>specialist industrial or enterprise systems supplied for a defined business purpose (see below);</li>
+      <li>assistive technology genuinely used by blind, visually impaired or disabled people for accessibility and independence (see below) — though a mass-market consumer product doesn't become exempt from our campaign merely because it also offers an accessibility feature.</li>
+    </ul>
+
+    <h3 id="q5">Are microphones and audio recording in scope, or is this just about cameras?</h3>
+    <p>Yes. Our concern isn't limited to cameras. Consumer glasses that include an inconspicuous microphone or other audio-recording capability capable of capturing other people are within the campaign's scope, in the same way camera-equipped glasses are. Removing the camera while keeping covert or inconspicuous audio capture wouldn't address what we're concerned about — the underlying issue is the same either way: something hidden in everyday eyewear, designed to capture people around the wearer without their knowledge.</p>
+
+    <h3 id="q6">What if the glasses use a camera for AI but don't save a photograph or video?</h3>
+    <p>This is within scope. The privacy concern doesn't disappear just because the visual information is analysed or processed by an AI system in real time, rather than being saved as a conventional photo or video file. From a bystander's perspective, what matters is that a face-worn camera may be capturing and processing information about them or their surroundings, without them knowing it's happening at all — whether or not anything is ultimately stored.</p>
+
+    <h3 id="q7">Does the campaign want to ban smart glasses used by businesses and workplaces?</h3>
+    <p>No. Specialist business-to-business wearable technology, supplied for a defined industrial, manufacturing or workplace purpose, is outside the scope of this campaign. There's a real difference between a specialist B2B transaction for a defined use case — manufacturing, for example — and selling and promoting these devices to the general public through mainstream retailers, which is what we're campaigning about.</p>
+    <p>That doesn't mean workplace wearable technology raises no privacy or employee-surveillance concerns of its own — data protection, employee monitoring and third-party data processing in the workplace are real and separate issues. They're just not what this campaign is trying to address.</p>
+
+    <h3 id="q8">What about smart glasses used by blind, visually impaired and disabled people?</h3>
+    <p>We actively support this. Smart glasses and similar wearable technology can genuinely help blind and partially sighted people understand their surroundings — the RNIB already recommends dedicated assistive smart glasses for people with little or no vision, and UK Government-backed research has funded development of assistive smart glasses for people with sight loss. This isn't an exception we tolerate; it's part of what we're campaigning <em>for</em> — accessibility and independence — at the same time as we campaign against mass-market normalisation of face-worn recording devices. <a href="/exemption-for-disabled-people/">Full position →</a></p>
+    <p>To be clear about where the line sits: this is about technology genuinely designed and used for accessibility, not a general carve-out. A mass-market consumer product doesn't become exempt from our campaign simply because it also happens to offer an accessibility-adjacent feature.</p>
+
+    <h3 id="q9">What about prescription smart glasses?</h3>
+    <p>Containing prescription lenses doesn't, on its own, determine whether a product is in or out of scope. What matters is its recording, capture, processing or surveillance capability, and the purpose it's designed and marketed for — not whether it also corrects your vision. If a pair of glasses is prescription eyewear that also happens to include hidden recording capability, our concern is that capability, not the fact that it corrects vision; we're not asking anyone to stop wearing prescription lenses. This is a separate question from accessibility and assistive technology above — prescription eyewear and genuine assistive technology are different issues, and neither one is a blanket exemption on its own.</p>
+  </section>
+
+  <section class="legal-section" id="why-a-ban">
+    <h2>Why a ban, why now</h2>
+
+    <h3 id="q10">Why focus on glasses when people can already film with smartphones?</h3>
+    <p>Holding up a phone is a visible, recognisable act — the people around you generally know it's happening and can react. Face-worn recording devices remove that visible cue: someone can be recorded without ever seeing a phone raised, or knowing it occurred at all. That difference in visibility, not the existence of cameras or microphones generally, is what the campaign is about.</p>
+
+    <h3 id="q11">Why does the campaign want a ban now, rather than waiting for better safeguards?</h3>
+    <p>We're responding to what's actually being sold and promoted right now, under the safeguards that exist right now. These products have entered the mass consumer market before society has had a meaningful chance to debate whether hidden recording technology in everyday eyewear should become normal in public life. Pausing mass-market sale and promotion while that debate happens — and while detailed regulation, technical safeguards and legislation are worked through with policymakers, technical experts, disabled people and accessibility representatives — is, in our view, more proportionate than allowing continued mass-market rollout ahead of any of that being in place.</p>
+    <p>There are real proposed alternatives we haven't ruled out — non-defeatable recording indicators, hardware shutters, restrictions on facial recognition or biometric identification specifically, limits on cloud processing or retention of captured material, and venue-specific restrictions (which we already support — see <a href="/#take-action">Take Action</a>). We haven't taken a settled position on whether any of these, on their own, would be sufficient instead of restricting mass-market sale. This is about the products and safeguards that exist today — not a claim that no future technology, regulation or technical design could ever adequately address these concerns.</p>
+
+    <h3 id="q12">Why regulate the product rather than punish people who misuse it?</h3>
+    <p>Existing law already addresses some specific misuse after the fact (see below). Our view is that when technology is specifically designed to make covert recording easy and inconspicuous, and is being sold and promoted as an everyday consumer product before adequate safeguards or public debate have happened, that combination creates a foreseeable, widespread problem that after-the-fact enforcement alone doesn't prevent. We recognise this is a genuine policy trade-off, not a self-evident one.</p>
+
+    <h3 id="q13">Isn't filming in public already legal?</h3>
+    <p>Generally, yes — there's no blanket law against photographing or filming people in a public place in the UK. But "generally legal" isn't the same as "no legal issues ever": specific conduct can still be a criminal offence (for example, voyeurism/upskirting under the Voyeurism (Offences) Act 2019, though that offence is narrowly defined), and separately, filming someone can in some circumstances give rise to civil claims — misuse of private information, harassment, or data protection concerns. This is genuinely fact-specific. We don't give legal advice; see our <a href="/resources/">Resources page</a> for further reading, including UK-specific legal information from a solicitors firm.</p>
+    <p>Sources: <a href="https://www.legislation.gov.uk/ukpga/2019/2/section/1/enacted" target="_blank" rel="noopener">Voyeurism (Offences) Act 2019, legislation.gov.uk</a></p>
+
+    <h3 id="q14">What privacy risks does the campaign believe are distinctive here?</h3>
+    <p>Existing legal protections weren't designed for a world where recording technology capable of discreet capture becomes an ordinary part of what people wear on their faces. The campaign is particularly concerned about: the loss of any visible cue that recording is happening (see above); the normalisation of covert recording as socially acceptable before society has decided it should be; and specific documented harms — including covert filming of women, use of footage for harassment or blackmail, and the difficulty bystanders face in knowing they've been recorded at all. See <a href="/resources/">Resources</a> for the evidence behind these concerns.</p>
+
+    <h3 id="q15">What does existing UK law already cover — and what does it not cover?</h3>
+    <p><strong>What's covered:</strong> filming genitals/buttocks/underwear without consent for sexual gratification or to cause distress is a specific criminal offence (voyeurism/upskirting, Voyeurism (Offences) Act 2019). UK GDPR and the Data Protection Act 2018 govern how personal data is processed — but importantly, they do not apply to processing "by a natural person in the course of a purely personal or household activity" (the household exemption, UK GDPR Article 2(2)(c)) — an ordinary person recording in public for personal reasons may fall within that exemption rather than being regulated by data protection law at all. Facial recognition / biometric identification is treated as special category data under UK GDPR when used to uniquely identify someone, requiring a stronger legal basis.</p>
+    <p><strong>What we believe isn't clearly covered:</strong> routine covert recording of strangers in public, outside the narrow voyeurism offence, where the household exemption may apply and no other specific offence fits.</p>
+    <p>Sources: <a href="https://www.legislation.gov.uk/ukpga/2019/2/section/1/enacted" target="_blank" rel="noopener">Voyeurism (Offences) Act 2019</a>; <a href="https://ico.org.uk/for-organisations/uk-gdpr-guidance-and-resources/exemptions/a-guide-to-the-data-protection-exemptions/" target="_blank" rel="noopener">ICO — a guide to the data protection exemptions</a>; <a href="https://ico.org.uk/for-organisations/uk-gdpr-guidance-and-resources/lawful-basis/biometric-data-guidance-biometric-recognition/biometric-recognition/" target="_blank" rel="noopener">ICO — biometric recognition guidance</a></p>
+
+    <h3 id="q16">Why does the campaign believe existing law is insufficient?</h3>
+    <p>Because the gaps described above — particularly the household exemption's potential application to casual public recording, and the narrowness of the voyeurism offence — mean a lot of the conduct we're concerned about (routine covert recording of strangers, not for sexual gratification, not meeting the threshold for harassment) may not be clearly unlawful at all, even though we believe it should raise real concern. That's a gap in the law, not a claim that current law is being broken.</p>
+
+    <h3 id="q17">What is the legal basis for the campaign's proposed ban?</h3>
+    <p>We are <strong>not</strong> claiming that Meta, or any manufacturer or retailer, is currently breaking the law by selling these products, and no regulator or court has made that finding. It's worth being precise about four different things that are easy to blur together:</p>
+    <ul>
+      <li><strong>Existing law</strong> covers some specific situations (see above) but, in our view, leaves real gaps around routine covert recording of strangers in public.</li>
+      <li><strong>Unresolved legal and data-protection questions</strong> — like how the household exemption applies to smart-glasses recording, or how real-time AI visual processing that isn't saved fits within data protection law — genuinely haven't been settled by a regulator or court.</li>
+      <li><strong>Our campaign's policy position</strong> doesn't depend on those questions being resolved in our favour first: we believe mass-market sale and promotion of these products should pause given the foreseeable risk, regardless of how those open legal questions are eventually decided.</li>
+      <li><strong>The petition's request</strong> is for Government to act — which may include introducing new or clarified legislation where existing law doesn't reach the problem, not solely enforcing laws that already exist.</li>
+    </ul>
+    <p>Not being able to point to a proven breach of the law today doesn't mean there isn't a real problem worth Parliament addressing. We're not lawyers, and nothing here is legal advice — see below.</p>
+  </section>
+
+  <section class="legal-section" id="about-us">
+    <h2>About us</h2>
+
+    <h3 id="q18">Is Stop Smart Glasses anti-technology?</h3>
+    <p>No. We support smart glasses as assistive technology (see above), and we're not opposed to AR, wearables or recording technology generally. Our concern is specifically the mass-market normalisation of inconspicuous, recording-capable consumer eyewear before society has had a chance to decide whether — and how — that should happen.</p>
+
+    <h3 id="q19">Who is behind the campaign?</h3>
+    <p>The UK Parliament petition this campaign supports was created by Guy Holder. Liz Hunter built this website — including its retailer database and campaign tools — to drive awareness of that petition. Guy and Liz now work together to spread the campaign's message and help it reach its goals.</p>
+    <p>Stop Smart Glasses is an independent grassroots campaign, not a company, charity or CIC, and is not affiliated with, endorsed by or associated with Meta or Ray-Ban. The website and retailer database were built from scratch using AI-assisted tools. <a href="/about/">More about the campaign →</a></p>
+
+    <h3 id="q20">Has the campaign received legal advice?</h3>
+    <p>No. This FAQ and the rest of the site reflect the campaign's own research and reasoning, using publicly available legislation, government and regulator (ICO) sources, and journalism — not formal legal advice, and Liz Hunter is not a lawyer or privacy-law expert. Where we discuss the law, we've tried to clearly separate what current law says from what we believe it doesn't adequately address.</p>
+
+    <h3 id="q21">How can someone support the campaign or learn more?</h3>
+    <p>Sign the <a href="https://petition.parliament.uk/petitions/769206" target="_blank" rel="noopener">UK Parliament petition</a>, use the ready-made templates on the homepage to contact a retailer, venue or your MP, or <a href="/resources/">read the evidence</a> behind the campaign. If you're outside the UK, the campaign is open source and designed to be adapted for other countries — see <a href="/global-action/">Global Action</a>.</p>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap footer__top">
+    <div class="footer__identity">
+      <p class="footer__mark">Stop Smart Glasses</p>
+      <p class="footer__tagline">WE DON'T CONSENT TO&nbsp;THIS</p>
+      <p class="footer__desc">Created by Liz Hunter — independent UK &amp; Ireland privacy campaign.</p>
+      <nav class="footer__links" aria-label="Footer">
+        <a href="/#take-action">Take action</a>
+        <a href="/#why-this-matters">Why this matters</a>
+        <a href="/resources/">Resources</a>
+        <a href="/global-action/">Global action</a>
+        <a href="/about/">About</a>
+        <a href="/faqs/" class="is-current">FAQs</a>
+        <a href="https://petition.parliament.uk/petitions/769206" target="_blank" rel="noopener">Sign the petition</a>
+      </nav>
+      <p class="footer__statement">The database shows where they're sold.<br>The campaign gives people the tools to&nbsp;act.</p>
+    </div>
+    <div class="footer__replicate">
+      <p class="footer__replicate-label">Global action</p>
+      <p class="footer__replicate-copy">This starts in the UK and Ireland. But smart glasses are a global issue. The Stop Smart Glasses website is open source – designed to be copied and adapted by anyone who wants to launch the campaign in their country.</p>
+      <a class="footer__replicate-cta" href="/global-action/">Create your local site →</a>
+    </div>
+  </div>
+  <div class="wrap footer__legal">
+    <nav class="footer__links" aria-label="Legal" style="margin-bottom:10px;">
+      <a href="/privacy/">Privacy</a>
+      <a href="/terms/">Terms</a>
+      <a href="/image-credits/">Image Credits</a>
+    </nav>
+    <p>Stop Smart Glasses is an independent campaign and is not affiliated with, endorsed by or associated with Meta or Ray-Ban.</p>
+    <p>&copy; 2026 Stop Smart Glasses</p>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var btn = document.getElementById('navToggle');
+  var menu = document.getElementById('navMobileMenu');
+  if(!btn || !menu) return;
+  btn.addEventListener('click', function(){
+    var willOpen = menu.hidden;
+    menu.hidden = !willOpen;
+    btn.setAttribute('aria-expanded', String(willOpen));
+  });
+  menu.addEventListener('click', function(e){
+    var link = e.target.closest('a');
+    if(link){
+      menu.hidden = true;
+      btn.setAttribute('aria-expanded', 'false');
+    }
+  });
+})();
+</script>
+</body>
+</html>
