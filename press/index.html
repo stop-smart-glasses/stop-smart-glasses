@@ -85,6 +85,7 @@ footer{background:var(--cream);color:var(--ink);border-top:1px solid var(--line)
 .footer__desc{font-size:14px;color:var(--muted);margin:0 0 20px;max-width:44ch;}
 .footer__links{display:flex;flex-wrap:wrap;row-gap:8px;margin:0 0 20px;}
 .footer__links a{font-size:13.5px;color:var(--ink);text-decoration:none;border-bottom:1px solid transparent;padding-bottom:1px;}
+nav.footer__links[aria-label="Footer"] a{font-weight:700;}
 .footer__links a:hover{border-bottom-color:var(--violet);}
 .footer__links a[aria-disabled="true"]{color:var(--muted);cursor:default;}
 .footer__links a[aria-disabled="true"]:hover{border-bottom-color:transparent;}
@@ -164,10 +165,59 @@ footer{background:var(--cream);color:var(--ink);border-top:1px solid var(--line)
   <section class="press-section">
 
     <div class="press-entry">
+      <p class="press-entry__meta">BBC News · 24 September 2026</p>
+      <h3>They were labelled 'pervert glasses'. Will a camera-free version transform their image?</h3>
+      <p>BBC News coverage of Meta's move to a camera-free "Ray-Ban Meta Audio" model, reported against the backdrop of the "pervert glasses" backlash against camera-equipped smart glasses.</p>
+      <a class="press-entry__link" href="https://www.bbc.co.uk/news/articles/cwp80l0my1x2o" target="_blank" rel="noopener">bbc.co.uk ↗</a>
+    </div>
+
+    <div class="press-entry">
+      <p class="press-entry__meta">BBC News · September 2026<span class="press-entry__format">TV / Video</span></p>
+      <h3>Meta reveals audio-only smart glasses amid backlash</h3>
+      <p>BBC News television coverage of Meta's camera-free smart glasses announcement and the wider backlash against camera-equipped models.</p>
+      <a class="press-entry__link" href="https://www.bbc.co.uk/iplayer/episode/l0058wrz/meta-reveals-audioonly-smart-glasses-amid-backlash" target="_blank" rel="noopener">bbc.co.uk/iplayer ↗</a>
+    </div>
+
+    <div class="press-entry">
+      <p class="press-entry__meta">The Telegraph · 14 September 2026</p>
+      <h3>The 'pick-up artists' secretly filming women using smart glasses</h3>
+      <p>Telegraph reporting on men using camera-equipped smart glasses to covertly film women without consent.</p>
+      <a class="press-entry__link" href="https://www.telegraph.co.uk/news/2026/09/14/secretly-filmed-by-meta-glasses/" target="_blank" rel="noopener">telegraph.co.uk ↗</a>
+    </div>
+
+    <div class="press-entry">
+      <p class="press-entry__meta">AFP · 14 September 2026</p>
+      <h3>Europe eyes battle over 'pervert' AI glasses</h3>
+      <p>AFP wire coverage of growing European regulatory pressure on smart glasses, citing the Stop Smart Glasses petition and campaign by name.</p>
+      <a class="press-entry__link" href="https://www.afp.com/en/europe-eyes-battle-over-pervert-ai-glasses" target="_blank" rel="noopener">afp.com ↗</a>
+    </div>
+
+    <div class="press-entry">
+      <p class="press-entry__meta">France 24 · 12 September 2026</p>
+      <h3>Battle over 'pervert' AI glasses in Europe's line of sight after scandal</h3>
+      <p>France 24 English-language coverage of growing European regulatory pressure on smart glasses following covert-filming controversies, referencing the UK campaign and petition.</p>
+      <a class="press-entry__link" href="https://www.france24.com/en/europe/20260912-battle-over-pervert-ai-glasses-in-europe-s-line-of-sight-after-scandal" target="_blank" rel="noopener">france24.com ↗</a>
+    </div>
+
+    <div class="press-entry">
+      <p class="press-entry__meta">ExplainX · 2026</p>
+      <h3>Smart Glasses Misuse, Venue Bans, and How to Protest in 2026</h3>
+      <p>A guide covering smart glasses misuse, spreading venue bans, and the grassroots Stop Smart Glasses campaign, with practical steps for taking local and political action.</p>
+      <a class="press-entry__link" href="https://explainx.ai/blog/smart-glasses-misuse-bans-how-to-protest-2026" target="_blank" rel="noopener">explainx.ai ↗</a>
+    </div>
+
+    <div class="press-entry">
       <p class="press-entry__meta">Mi3 (Australia) · 31 August 2026</p>
       <h3>Glassholes: "Specs Offenders" — Meta glasses feed its AI data stream whether you consent or not</h3>
       <p>Australian marketing and media trade coverage of the campaign, discussed alongside wider concerns about Meta smart glasses and consent.</p>
       <a class="press-entry__link" href="https://www.mi-3.com.au/31-08-2026/glassholes-specs-offenders-meta-glasses-feed-its-ai-data-stream-whether-you-consent-or" target="_blank" rel="noopener">mi-3.com.au ↗</a>
+    </div>
+
+    <div class="press-entry">
+      <p class="press-entry__meta">Korben (France) · August 2026</p>
+      <h3>Une mère de famille lance une campagne pour interdire les lunettes Meta</h3>
+      <p>French-language technology coverage of the campaign's launch, profiling founder Liz Hunter and the site's retailer finder, letter templates and petition link. English: "A mother launches a campaign to ban Meta glasses."</p>
+      <a class="press-entry__link" href="https://korben.info/une-mere-de-famille-lance-une-campagne-pour-interdire-les-lunettes-meta.html" target="_blank" rel="noopener">korben.info ↗</a>
     </div>
 
     <div class="press-entry">
@@ -222,7 +272,6 @@ footer{background:var(--cream);color:var(--ink);border-top:1px solid var(--line)
         <a href="/about/">About</a>
         <a href="/faqs/">FAQs</a>
         <a href="/press/" class="is-current">Press</a>
-        <a href="https://petition.parliament.uk/petitions/769206" target="_blank" rel="noopener">Sign the petition</a>
       </nav>
       <p class="footer__statement">The database shows where they're sold.<br>The campaign gives people the tools to&nbsp;act.</p>
     </div>
