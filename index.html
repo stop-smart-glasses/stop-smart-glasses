@@ -1169,6 +1169,38 @@ nav.footer__links[aria-label="Footer"] a{font-weight:700;}
       </div>
     </template>
 
+    <template id="tmpl-retailer-johnlewis">
+      <button type="button" class="modal-back" onclick="openTemplate('tmpl-national-chooser')">← All retailers</button>
+      <h4>John Lewis</h4>
+      <div class="email-meta">
+        <div class="email-meta__row"><span>To</span> <strong>pressoffice@johnlewis.co.uk</strong></div>
+        <div class="email-meta__row"><span>Subject</span> <strong>Please stop selling camera-equipped smart glasses</strong></div>
+      </div>
+      <div class="email-doc" id="retailerBodyJohnLewis">
+        <p>Dear John Lewis,</p>
+        <p>I'm asking you to stop selling camera-equipped smart glasses, including Ray-Ban Meta glasses.</p>
+        <p>As a major national retailer, what you choose to stock matters. Your stores, website, advertising and reputation don't just respond to consumer trends – they help create them.</p>
+        <p>By selling camera-equipped smart glasses, you are helping normalise a technology that allows people to film those around them without holding up a phone or camera. The people being filmed can have no idea it's happening.</p>
+        <p>The person buying the glasses chooses to wear a camera on their face. Everyone around them gets no such choice.</p>
+        <p>And the danger isn't hypothetical. Smart glasses have already been linked to cases involving non-consensual intimate recording, sextortion and blackmail:</p>
+        <p>Non-consensual intimate recording:<br>https://www.telegraph.co.uk/news/2026/01/09/man-smart-glasses-illegally-record-sex-spared-jail/</p>
+        <p>Sextortion:<br>https://www.ubergizmo.com/2026/05/can-smart-glasses-be-used-for-extortion/</p>
+        <p>Blackmail:<br>https://www.bbc.co.uk/news/articles/cwy87wqz0q9o</p>
+        <p>A small recording light is not an adequate safeguard. Cheap stickers capable of obscuring LED lights are readily available.</p>
+        <p>Meta is leading the charge, but the problem is bigger than Meta. Other major technology companies are following.</p>
+        <p>Use your scale and influence as a national retailer responsibly. Stop selling Ray-Ban Meta and all camera-equipped smart glasses.</p>
+        <p>Don't help normalise a technology that allows people to record others without their knowledge or consent.</p>
+        <p>You can read more about the campaign and the evidence behind it here: https://stopsmartglasses.com</p>
+        <p>Yours Sincerely,</p>
+        <p>[Your name]</p>
+      </div>
+      <div class="btn-row">
+        <button type="button" onclick="window.location.href=mailtoStatic('Please stop selling camera-equipped smart glasses', document.getElementById('retailerBodyJohnLewis'), 'pressoffice@johnlewis.co.uk')">Email this retailer →</button>
+        <button type="button" class="secondary" onclick="copyStaticMessage(document.getElementById('retailerBodyJohnLewis'), this)">Copy message</button>
+        <span class="copied-msg">Copied ✓</span>
+      </div>
+    </template>
+
     <template id="tmpl-mp-action">
       <h3>Write to your MP</h3>
       <p class="static-action__intro">Read the campaign's approved MP message below, then use WriteToThem to find your MP and send it — WriteToThem is an independent, well-established service for contacting your representatives; we don't need to build our own MP lookup.</p>
