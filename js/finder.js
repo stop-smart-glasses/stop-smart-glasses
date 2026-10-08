@@ -91,7 +91,7 @@ https://www.ubergizmo.com/2026/05/can-smart-glasses-be-used-for-extortion/
 Blackmail:
 https://www.bbc.co.uk/news/articles/cwy87wqz0q9o
 
-A small recording light is not an adequate safeguard. Cheap stickers capable of obscuring LED lights are readily available.
+A small LED recording light is not consent, or an adequate safeguard. Cheap stickers capable of obscuring LED lights are readily available.
 
 Meta has already helped put millions of camera-equipped glasses into circulation, and other technology companies are developing smart eyewear of their own. We need to stop cameras worn on people's faces becoming normal.
 
