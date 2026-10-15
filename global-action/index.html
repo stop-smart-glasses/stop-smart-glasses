@@ -98,6 +98,10 @@ a{color:inherit;}
 .adapt-list li{font-size:15.5px;line-height:1.55;color:var(--ink);margin:0 0 12px;padding-left:20px;position:relative;}
 .adapt-list li:last-child{margin-bottom:0;}
 .adapt-list li::before{content:"—";position:absolute;left:0;color:var(--violet);font-weight:700;}
+.template-promo{background:var(--yellow);border:2px solid var(--ink);padding:28px;margin:28px 0 0;max-width:70ch;}
+.template-promo h3{font-family:var(--serif);font-weight:700;font-size:19px;line-height:1.3;margin:0 0 10px;}
+.template-promo p{font-size:14.5px;line-height:1.6;color:var(--ink);margin:0 0 18px;}
+.template-promo__cta{display:inline-block;}
 
 /* ---------- Global Action Co-Pilot Brief ---------- */
 .copilot-subhead{font-family:var(--serif);font-weight:700;font-size:17px;line-height:1.4;color:var(--violet);margin:0 0 18px;}
@@ -126,6 +130,16 @@ a{color:inherit;}
 .copilot-step:last-child{margin-bottom:0;}
 .copilot-step h3{font-family:var(--serif);font-weight:700;font-size:16.5px;line-height:1.35;color:var(--ink);margin:0 0 8px;}
 .copilot-step p{font-size:14.5px;line-height:1.6;color:var(--muted);margin:0 0 10px;}
+
+/* ---------- Campaign email templates ---------- */
+.tmpl-meta{background:#fff;border:1px solid var(--line);padding:14px 16px;margin:0 0 14px;}
+.tmpl-meta__row{font-size:13px;color:var(--muted);}
+.tmpl-meta__row span{text-transform:uppercase;letter-spacing:.04em;font-size:11px;margin-right:8px;}
+.tmpl-meta__row strong{color:var(--ink);}
+.tmpl-note{background:#fff3b0;border-left:3px solid var(--violet);padding:12px 14px;font-size:13.5px;line-height:1.5;color:var(--ink);margin:0 0 16px;}
+.tmpl-placeholder{font-weight:700;color:var(--violet-deep);background:#fff3b0;padding:0 3px;}
+.tmpl-body p{font-size:14.5px;line-height:1.6;color:var(--ink);margin:0 0 14px;}
+.tmpl-body p:last-child{margin-bottom:0;}
 
 /* ---------- footer (matches homepage) ---------- */
 footer{background:var(--cream);color:var(--ink);border-top:1px solid var(--line);padding:56px 0 0;margin-top:72px;}
@@ -218,6 +232,7 @@ nav.footer__links[aria-label="Footer"] a{font-weight:700;}
   <div class="stub-section">
     <h2>What you can adapt</h2>
     <ul class="adapt-list">
+      <li>Ready-to-use campaign email templates</li>
       <li>Local stockist database</li>
       <li>Retailer contact routes</li>
       <li>Political action</li>
@@ -225,6 +240,147 @@ nav.footer__links[aria-label="Footer"] a{font-weight:700;}
       <li>Legal/evidence resources</li>
       <li>Campaign copy and structure</li>
     </ul>
+
+    <div class="template-promo">
+      <h3>Ready-to-use campaign email templates</h3>
+      <p>We've written campaign emails you can adapt for your own country. Use them to contact retailers, decision-makers and other relevant organisations.</p>
+      <a class="site-nav__cta template-promo__cta" href="#campaign-email-templates">View email templates →</a>
+    </div>
+  </div>
+
+  <div class="stub-section" id="campaign-email-templates">
+    <h2>Campaign email templates</h2>
+    <p>Four ready-to-use templates from the UK &amp; Ireland campaign. The wording, subject lines and placeholders are preserved exactly as written — adapt the bracketed fields for your own country, then copy the message into your email app.</p>
+
+    <details class="copilot-details">
+      <summary class="copilot-summary">1. Write to a local optician</summary>
+      <div class="copilot-panel">
+        <h3>Write to a local optician</h3>
+        <div class="tmpl-meta">
+          <div class="tmpl-meta__row"><span>Subject</span> <strong>Please stop selling camera-equipped smart glasses</strong></div>
+        </div>
+        <p class="tmpl-note">Replace <span class="tmpl-placeholder">[optician]</span> and <span class="tmpl-placeholder">[Your name]</span> with your own details before sending.</p>
+        <div class="tmpl-body" id="tmplBodyOptician">
+          <p>Dear [optician],</p>
+          <p>I'm asking you to stop selling camera-equipped smart glasses, including Ray-Ban Meta glasses.</p>
+          <p>As a local optician, you're an important part of your high street and community. You may have known some of your customers and their families for years. People trust you with their sight, their health and the products you recommend.</p>
+          <p>So why sell a device that can be used to record those same customers – and other people in your community – without their knowledge or consent?</p>
+          <p>Smart glasses allow people to film those around them without holding up a phone or camera. The person buying the glasses chooses to wear a camera on their face. The people around them get no such choice.</p>
+          <p>Women. Children. Older people. People with disabilities. Vulnerable people. Your customers, their families and your neighbours.</p>
+          <p>And the danger isn't hypothetical. Smart glasses have already been linked to cases involving non-consensual intimate recording, sextortion and blackmail:</p>
+          <p>Non-consensual intimate recording:<br>https://www.telegraph.co.uk/news/2026/01/09/man-smart-glasses-illegally-record-sex-spared-jail/</p>
+          <p>Sextortion:<br>https://www.ubergizmo.com/2026/05/can-smart-glasses-be-used-for-extortion/</p>
+          <p>Blackmail:<br>https://www.bbc.co.uk/news/articles/cwy87wqz0q9o</p>
+          <p>A small LED recording light is not consent, or an adequate safeguard. Cheap stickers capable of obscuring LED lights are readily available.</p>
+          <p>Meta has already helped put millions of camera-equipped glasses into circulation, and other technology companies are developing smart eyewear of their own. We need to stop cameras worn on people's faces becoming normal.</p>
+          <p>Your business is built around helping people see clearly.</p>
+          <p>We're asking you to open your eyes to the dangers of camera-equipped smart glasses – and stop selling them.</p>
+          <p>Protect the trust your community places in you. Don't help normalise a technology that allows people to record others without their knowledge or consent.</p>
+          <p>You can read more about the campaign and the evidence behind it here: https://stopsmartglasses.com</p>
+          <p>Yours Sincerely,</p>
+          <p>[Your name]</p>
+        </div>
+        <div class="copilot-copy-row">
+          <button type="button" class="copilot-copy-btn" onclick="copyTemplateBody('tmplBodyOptician', this)">Copy email</button>
+          <span class="copilot-copied-msg" aria-live="polite">Copied ✓</span>
+        </div>
+      </div>
+    </details>
+
+    <details class="copilot-details">
+      <summary class="copilot-summary">2. Write to a national retailer</summary>
+      <div class="copilot-panel">
+        <h3>Write to a national retailer</h3>
+        <div class="tmpl-meta">
+          <div class="tmpl-meta__row"><span>Subject</span> <strong>Please stop selling camera-equipped smart glasses</strong></div>
+        </div>
+        <p class="tmpl-note">Replace <span class="tmpl-placeholder">[retailer]</span> and <span class="tmpl-placeholder">[Your name]</span> with your own details before sending.</p>
+        <div class="tmpl-body" id="tmplBodyRetailer">
+          <p>Dear [retailer],</p>
+          <p>I'm asking you to stop selling camera-equipped smart glasses, including Ray-Ban Meta glasses.</p>
+          <p>As a major national retailer, what you choose to stock matters. Your stores, website, advertising and reputation don't just respond to consumer trends – they help create them.</p>
+          <p>By selling camera-equipped smart glasses, you are helping normalise a technology that allows people to film those around them without holding up a phone or camera. The people being filmed can have no idea it's happening.</p>
+          <p>The person buying the glasses chooses to wear a camera on their face. Everyone around them gets no such choice.</p>
+          <p>And the danger isn't hypothetical. Smart glasses have already been linked to cases involving non-consensual intimate recording, sextortion and blackmail:</p>
+          <p>Non-consensual intimate recording:<br>https://www.telegraph.co.uk/news/2026/01/09/man-smart-glasses-illegally-record-sex-spared-jail/</p>
+          <p>Sextortion:<br>https://www.ubergizmo.com/2026/05/can-smart-glasses-be-used-for-extortion/</p>
+          <p>Blackmail:<br>https://www.bbc.co.uk/news/articles/cwy87wqz0q9o</p>
+          <p>A small LED recording light is not consent, or an adequate safeguard. Cheap stickers capable of obscuring LED lights are readily available.</p>
+          <p>Meta is leading the charge, but the problem is bigger than Meta. Other major technology companies are following.</p>
+          <p>Use your scale and influence as a national retailer responsibly. Stop selling Ray-Ban Meta and all camera-equipped smart glasses.</p>
+          <p>Don't help normalise a technology that allows people to record others without their knowledge or consent.</p>
+          <p>You can read more about the campaign and the evidence behind it here: https://stopsmartglasses.com</p>
+          <p>Yours Sincerely,</p>
+          <p>[Your name]</p>
+        </div>
+        <div class="copilot-copy-row">
+          <button type="button" class="copilot-copy-btn" onclick="copyTemplateBody('tmplBodyRetailer', this)">Copy email</button>
+          <span class="copilot-copied-msg" aria-live="polite">Copied ✓</span>
+        </div>
+      </div>
+    </details>
+
+    <details class="copilot-details">
+      <summary class="copilot-summary">3. Write to your local MP</summary>
+      <div class="copilot-panel">
+        <h3>Write to your local MP</h3>
+        <div class="tmpl-meta">
+          <div class="tmpl-meta__row"><span>Subject</span> <strong>Please act now before it's too late: Ban camera-equipped smart glasses</strong></div>
+        </div>
+        <p class="tmpl-note">Replace <span class="tmpl-placeholder">[MP name]</span>, <span class="tmpl-placeholder">[Name]</span> and <span class="tmpl-placeholder">{postcode}</span> with your own details before sending.</p>
+        <div class="tmpl-body" id="tmplBodyMp">
+          <p>Dear [MP name],</p>
+          <p>I am writing as your constituent to ask you to support an immediate ban on the sale and use of camera-equipped smart glasses in the UK.</p>
+          <p>These devices allow people to film those around them without holding up a phone or camera. The people being filmed can have no idea it is happening.</p>
+          <p>Women and girls, children, older people, LGBTQ+ people and disabled people are particularly vulnerable. We know technology is already used for stalking, harassment, sexualised deepfakes and exploitation. Why are we making that easier by arming them with covert recording devices?</p>
+          <p>This raises serious questions under Article 8 of the Human Rights Act (the right to respect for private and family life), UK GDPR and data-protection law, and the Equality Act 2010.</p>
+          <p>Yet someone secretly recorded may never know their image was captured, where it went, how it was processed or what it was subsequently used for. There is no meaningful consent at the point of capture, and no meaningful justice being offered afterwards.</p>
+          <p>Everyone standing in front of the camera has rights too. We spent years allowing social media to race ahead of regulation. Only after serious harms to children, privacy and public safety became impossible to ignore did governments begin trying to catch up.</p>
+          <p>We don't want to repeat that mistake with smart glasses. We do not need another generation to be the evidence.</p>
+          <p>The window to act is shrinking. Once cameras worn on faces become normalised, walking it back will be extraordinarily difficult. In 10 or 20 years time, we may well look back and realise this was the moment when we could have stopped it.</p>
+          <p>I am asking you to support a blanket ban on camera-equipped smart glasses and press the Government to act now, before this becomes normal.</p>
+          <p>Yours sincerely,</p>
+          <p>[Name]</p>
+          <p>{postcode}</p>
+        </div>
+        <div class="copilot-copy-row">
+          <button type="button" class="copilot-copy-btn" onclick="copyTemplateBody('tmplBodyMp', this)">Copy email</button>
+          <span class="copilot-copied-msg" aria-live="polite">Copied ✓</span>
+        </div>
+      </div>
+    </details>
+
+    <details class="copilot-details">
+      <summary class="copilot-summary">4. Write to a local premises</summary>
+      <div class="copilot-panel">
+        <h3>Write to a local premises</h3>
+        <div class="tmpl-meta">
+          <div class="tmpl-meta__row"><span>Subject</span> <strong>Ban recording-enabled smart glasses from your premises</strong></div>
+        </div>
+        <p class="tmpl-note">Replace <span class="tmpl-placeholder">[Leisure Centre / Gym / Venue name]</span> and <span class="tmpl-placeholder">[Your name]</span> with your own details before sending.</p>
+        <div class="tmpl-body" id="tmplBodyPremises">
+          <p>Dear [Leisure Centre / Gym / Venue name],</p>
+          <p>I'm asking you to ban recording-enabled smart glasses and camera-equipped eyewear from your premises.</p>
+          <p>These glasses allow people to film those around them without holding up a phone or camera. The people being filmed can have no idea it's happening.</p>
+          <p>In leisure centres, gyms and swimming pools, that is unacceptable. Children and adults are changing, swimming and exercising in spaces where they should be able to expect privacy.</p>
+          <p>And the danger isn't hypothetical. Smart glasses have already been linked to cases involving non-consensual intimate recording, sextortion and blackmail:</p>
+          <p>Non-consensual intimate recording:<br>https://www.telegraph.co.uk/news/2026/01/09/man-smart-glasses-illegally-record-sex-spared-jail/</p>
+          <p>Sextortion:<br>https://www.ubergizmo.com/2026/05/can-smart-glasses-be-used-for-extortion/</p>
+          <p>Blackmail:<br>https://www.bbc.co.uk/news/articles/cwy87wqz0q9o</p>
+          <p>A small recording light is not an adequate safeguard. Cheap stickers capable of obscuring LED lights are readily available.</p>
+          <p>And this technology is spreading. We need to set boundaries now, before cameras worn on people's faces become normal.</p>
+          <p>Please ban recording-enabled smart glasses and camera-equipped eyewear from your premises now. Make the ban visible at entrances and clear to both staff and customers.</p>
+          <p>People should be able to swim, exercise, change and spend time with their children without wondering whether the person next to them is recording them.</p>
+          <p>You can read more about the campaign and the evidence behind it here: https://stopsmartglasses.com</p>
+          <p>Yours Sincerely,</p>
+          <p>[Your name]</p>
+        </div>
+        <div class="copilot-copy-row">
+          <button type="button" class="copilot-copy-btn" onclick="copyTemplateBody('tmplBodyPremises', this)">Copy email</button>
+          <span class="copilot-copied-msg" aria-live="polite">Copied ✓</span>
+        </div>
+      </div>
+    </details>
   </div>
 
   <div class="stub-section">
@@ -494,6 +650,31 @@ function copyCopilotBrief(btn) {
     ta.focus();
     ta.select();
     document.execCommand('copy');
+    showCopied();
+  }
+}
+
+function copyTemplateBody(bodyId, btn) {
+  var doc = document.getElementById(bodyId);
+  var text = [].slice.call(doc.querySelectorAll('p')).map(function (p) { return p.textContent; }).join('\n\n');
+  var msg = btn.parentElement.querySelector('.copilot-copied-msg');
+  function showCopied() {
+    if (!msg) return;
+    msg.classList.add('show');
+    setTimeout(function () { msg.classList.remove('show'); }, 1800);
+  }
+  if (navigator.clipboard && navigator.clipboard.writeText) {
+    navigator.clipboard.writeText(text).then(showCopied);
+  } else {
+    var ta = document.createElement('textarea');
+    ta.value = text;
+    ta.style.position = 'fixed';
+    ta.style.opacity = '0';
+    document.body.appendChild(ta);
+    ta.focus();
+    ta.select();
+    document.execCommand('copy');
+    document.body.removeChild(ta);
     showCopied();
   }
 }
