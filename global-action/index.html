@@ -98,6 +98,7 @@ a{color:inherit;}
 .adapt-list li{font-size:15.5px;line-height:1.55;color:var(--ink);margin:0 0 12px;padding-left:20px;position:relative;}
 .adapt-list li:last-child{margin-bottom:0;}
 .adapt-list li::before{content:"—";position:absolute;left:0;color:var(--violet);font-weight:700;}
+.adapt-cta-stack{display:flex;flex-direction:column;align-items:flex-start;}
 
 /* ---------- Global Action Co-Pilot Brief ---------- */
 .copilot-subhead{font-family:var(--serif);font-weight:700;font-size:17px;line-height:1.4;color:var(--violet);margin:0 0 18px;}
@@ -136,6 +137,17 @@ a{color:inherit;}
 .tmpl-placeholder{font-weight:700;color:var(--violet-deep);background:#fff3b0;padding:0 3px;}
 .tmpl-body p{font-size:14.5px;line-height:1.6;color:var(--ink);margin:0 0 14px;}
 .tmpl-body p:last-child{margin-bottom:0;}
+
+/* ---------- Logos and press releases ---------- */
+.resource-group{margin:32px 0 0;}
+.resource-group:first-of-type{margin-top:24px;}
+.resource-group h3{font-family:var(--serif);font-weight:700;font-size:17px;line-height:1.35;color:var(--ink);margin:0 0 8px;}
+.resource-group p{font-size:14.5px;line-height:1.6;color:var(--muted);margin:0 0 14px;}
+.logo-grid{display:grid;grid-template-columns:1fr 1fr;gap:20px;margin:0 0 4px;}
+.logo-card{background:var(--cream-shade);padding:20px;display:flex;flex-direction:column;}
+.logo-preview{width:100%;height:200px;object-fit:contain;display:block;margin:0 0 16px;border:1px solid var(--line);background:var(--cream);}
+.logo-card .global-cta{margin-top:auto;align-self:flex-start;}
+@media (max-width:600px){ .logo-grid{grid-template-columns:1fr;} }
 
 /* ---------- footer (matches homepage) ---------- */
 footer{background:var(--cream);color:var(--ink);border-top:1px solid var(--line);padding:56px 0 0;margin-top:72px;}
@@ -229,6 +241,8 @@ nav.footer__links[aria-label="Footer"] a{font-weight:700;}
     <h2>What you can adapt</h2>
     <ul class="adapt-list">
       <li>Ready-to-use campaign email templates</li>
+      <li>Campaign logos and branding</li>
+      <li>Original and adaptable press releases</li>
       <li>Local stockist database</li>
       <li>Retailer contact routes</li>
       <li>Political action</li>
@@ -237,7 +251,10 @@ nav.footer__links[aria-label="Footer"] a{font-weight:700;}
       <li>Campaign copy and structure</li>
     </ul>
 
-    <a class="global-cta" href="#campaign-email-templates">View campaign email templates →</a>
+    <div class="adapt-cta-stack">
+      <a class="global-cta" href="#campaign-email-templates">View campaign email templates →</a>
+      <a class="global-cta" href="#logos-press-releases">View logos and press releases →</a>
+    </div>
   </div>
 
   <div class="stub-section" id="campaign-email-templates">
@@ -381,6 +398,38 @@ nav.footer__links[aria-label="Footer"] a{font-weight:700;}
         </div>
       </div>
     </details>
+  </div>
+
+  <div class="stub-section" id="logos-press-releases">
+    <h2>Logos and press releases</h2>
+    <p>Official campaign branding and press materials for anyone launching Stop Smart Glasses in their own country.</p>
+
+    <div class="resource-group">
+      <h3>Campaign logos</h3>
+      <p>Both logos are provided exactly as designed — please don't recolour, crop or distort them.</p>
+      <div class="logo-grid">
+        <div class="logo-card">
+          <img class="logo-preview" src="../assets/logos/stop-smart-glasses-logo-square.png" alt="Stop Smart Glasses square campaign logo: the word STOP in bold black serif type on a yellow highlight, with SMART GLASSES below and an illustrated pair of glasses to the right, on a cream background.">
+          <a class="global-cta" href="../assets/logos/stop-smart-glasses-logo-square.png" download>Download square logo (PNG) →</a>
+        </div>
+        <div class="logo-card">
+          <img class="logo-preview" src="../assets/logos/stop-smart-glasses-logo-original.png" alt="Stop Smart Glasses landscape campaign logo: the word STOP in bold black serif type on a yellow highlight, with SMART GLASSES below and an illustrated pair of glasses to the right, on a cream background.">
+          <a class="global-cta" href="../assets/logos/stop-smart-glasses-logo-original.png" download>Download landscape logo (PNG) →</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="resource-group">
+      <h3>Original UK and Ireland press release</h3>
+      <p>The original campaign launch announcement, published 20 August 2026, provided as an example for other campaigners.</p>
+      <a class="global-cta" href="../assets/downloads/stop-smart-glasses-press-release-uk-ireland-launch.pdf" download>Download original press release (PDF) →</a>
+    </div>
+
+    <div class="resource-group">
+      <h3>International press release template</h3>
+      <p>A ready-to-adapt launch announcement with country-specific placeholders, instructions for adapters and a pre-publication checklist.</p>
+      <a class="global-cta" href="../assets/downloads/stop-smart-glasses-international-press-release-template.docx" download>Download press release template (Word) →</a>
+    </div>
   </div>
 
   <div class="stub-section">
